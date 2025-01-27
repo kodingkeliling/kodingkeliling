@@ -1,36 +1,35 @@
-// pages/index.tsx
-import Script from 'next/script';
 import { useEffect } from 'react';
-
-/* global Tally */
 
 const ContactForm = () => {
   useEffect(() => {
-    // This ensures Tally is loaded after the script is executed
-    const loadTally = () => {
-      if (typeof Tally !== 'undefined') {
-        Tally.loadEmbeds();
-      }
-    };
+    // Memuat script eksternal Tally
+    const script = document.createElement('script');
+    script.src = 'https://tally.so/widgets/embed.js';
+    script.async = true;
+    document.body.appendChild(script);
 
-    // Inject custom styles for Tally iframe when dark mode is enabled
-    const applyCustomStyles = () => {
-      const isDarkMode = document.documentElement.classList.contains('dark');
-      if (isDarkMode) {
-        // Apply white label color for dark mode
-        const style = document.createElement('style');
-        style.innerHTML = `
-          iframe[data-tally-src] {
-            --tally-form-label-color: white !important;
-          }
-        `;
-        document.head.appendChild(style);
-      }
-    };
+    // Menambahkan gaya khusus untuk mode gelap
+    const isDarkMode = document.documentElement.classList.contains('dark');
+    if (isDarkMode) {
+      const style = document.createElement('style');
+      style.innerHTML = `
+        iframe[data-tally-src] {
+          --tally-form-label-color: white !important;
+        }
+      `;
+      document.head.appendChild(style);
+    }
 
-    // Run the functions when component mounts
-    loadTally();
-    applyCustomStyles();
+    // Membersihkan skrip dan gaya ketika komponen dilepas
+    return () => {
+      document.body.removeChild(script);
+      const styles = document.head.querySelectorAll('style');
+      styles.forEach((style) => {
+        if (style.innerHTML.includes('--tally-form-label-color')) {
+          document.head.removeChild(style);
+        }
+      });
+    };
   }, []);
 
   return (
@@ -49,11 +48,6 @@ const ContactForm = () => {
           marginWidth="0"
           title="Kontak Kami"
         ></iframe>
-        {/* Load the Tally script */}
-        <Script
-          src="https://tally.so/widgets/embed.js"
-          strategy="afterInteractive"
-        />
       </div>
     </div>
   );

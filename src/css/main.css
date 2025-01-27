@@ -173,7 +173,8 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 */
 
 abbr:where([title]) {
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 /*
@@ -1226,10 +1227,6 @@ video {
 .dark\:bg-ternary-dark:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(30 56 81 / var(--tw-bg-opacity, 1));
-}
-.dark\:bg-secondary-dark:is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(16 45 68 / var(--tw-bg-opacity, 1));
 }
 .dark\:font-medium:is(.dark *) {
   font-weight: 500;
