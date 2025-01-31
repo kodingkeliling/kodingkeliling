@@ -25,14 +25,14 @@ function App() {
 					<Suspense fallback={""}>
 						<Routes>
 							<Route path="/" element={<Home />} />
-							<Route path="projects" element={<Projects />} />
+							<Route path="projek" element={<Projects />} />
 							<Route
-								path="projects/:slug"
+								path="projek/:slug"
 								element={<ProjectSingle />}
 							/>
 
-							<Route path="about" element={<About />} />
-							<Route path="contact" element={<Contact />} />
+							<Route path="tentang-kami" element={<About />} />
+							<Route path="kontak" element={<Contact />} />
 						</Routes>
 					</Suspense>
 					<AppFooter />

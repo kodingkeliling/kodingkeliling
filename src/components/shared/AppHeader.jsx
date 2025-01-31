@@ -121,25 +121,25 @@ const AppHeader = () => {
 					}
 				>
 					<Link
-						to="/projects"
-						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
-						aria-label="Projects"
+						to="/projek"
+						className={`block text-left text-lg text-primary-dark ${location.pathname === '/projek' ? 'text-secondBlue-light dark:text-firstBlue-light' : 'text-primary-dark dark:text-ternary-light'}  sm:mx-4 mb-2 sm:py-2`}
+						aria-label="projek"
 					>
-						Projects
+						Projek
 					</Link>
 					<Link
-						to="/about"
-						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
-						aria-label="About Me"
+						to="/tentang-kami"
+						className={`block text-left text-lg text-primary-dark ${location.pathname === '/tentang-kami' ? 'text-secondBlue-light dark:text-firstBlue-light' : 'text-primary-dark dark:text-ternary-light'}  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark`}
+						aria-label="Tentang Kami"
 					>
-						About Me
+						Tentang Kami
 					</Link>
 					<Link
-						to="/contact"
-						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
-						aria-label="Contact"
+						to="/kontak"
+						className={`block text-left text-lg text-primary-dark ${location.pathname === '/kontak' ? 'text-secondBlue-light dark:text-firstBlue-light' : 'text-primary-dark dark:text-ternary-light'}  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark`}
+						aria-label="Kontak"
 					>
-						Contact
+						Kontak
 					</Link>
 					<div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 						<a
@@ -162,25 +162,25 @@ const AppHeader = () => {
 				{/* Header links large screen */}
 				<div className="font-general-medium hidden m-0 sm:ml-0 mt-5 sm:mt-0 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none">
 					<Link
-						to="/projects"
-						className={`block text-left text-lg  sm:mx-4 mb-2 sm:py-2 hover:text-secondBlue-light dark:hover:text-firstBlue-light ${location.pathname === '/projects' ? 'text-secondBlue-light dark:text-firstBlue-light' : 'text-primary-dark dark:text-ternary-light'}`}
-						aria-label="Projects"
+						to="/projek"
+						className={`block text-left text-lg  sm:mx-4 mb-2 sm:py-2 hover:text-secondBlue-light dark:hover:text-firstBlue-light ${location.pathname === '/projek' ? 'text-secondBlue-light dark:text-firstBlue-light' : 'text-primary-dark dark:text-ternary-light'}`}
+						aria-label="projek"
 					>
-						Projects
+						Projek
 					</Link>
 					<Link
-						to="/about"
-						className={`block text-left text-lg  sm:mx-4 mb-2 sm:py-2 hover:text-secondBlue-light dark:hover:text-firstBlue-light ${location.pathname === '/about' ? 'text-secondBlue-light dark:text-firstBlue-light' : 'text-primary-dark dark:text-ternary-light'}`}
-						aria-label="About Me"
+						to="/tentang-kami"
+						className={`block text-left text-lg  sm:mx-4 mb-2 sm:py-2 hover:text-secondBlue-light dark:hover:text-firstBlue-light ${location.pathname === '/tentang-kami' ? 'text-secondBlue-light dark:text-firstBlue-light' : 'text-primary-dark dark:text-ternary-light'}`}
+						aria-label="Tentang Kami"
 					>
-						About Me
+						Tentang Kami
 					</Link>
 					<Link
-						to="/contact"
-						className={`block text-left text-lg  sm:mx-4 mb-2 sm:py-2 hover:text-secondBlue-light dark:hover:text-firstBlue-light ${location.pathname === '/contact' ? 'text-secondBlue-light dark:text-firstBlue-light' : 'text-primary-dark dark:text-ternary-light'}`}
-						aria-label="Contact"
+						to="/kontak"
+						className={`block text-left text-lg  sm:mx-4 mb-2 sm:py-2 hover:text-secondBlue-light dark:hover:text-firstBlue-light ${location.pathname === '/kontak' ? 'text-secondBlue-light dark:text-firstBlue-light' : 'text-primary-dark dark:text-ternary-light'}`}
+						aria-label="Kontak"
 					>
-						Contact
+						Kontak
 					</Link>
 				</div>
 

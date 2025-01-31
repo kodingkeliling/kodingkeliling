@@ -37,6 +37,15 @@ module.exports = {
 				'secondary-dark': '#102D44',
 				'ternary-dark': '#1E3851',
 			},
+			animation: {
+				'bounce-left': 'bounceLeft 1s ease-in-out infinite',
+			},
+			keyframes: {
+				bounceLeft: {
+					'0%, 100%': { transform: 'translateX(0)', opacity: '1' },
+					'50%': { transform: 'translateX(-5px)', opacity: '0.8' },
+				},
+			},
 			container: {
 				padding: {
 					DEFAULT: '1rem',

@@ -6,6 +6,7 @@ import Button from '../components/reusable/Button';
 
 const Home = () => {
 	return (
+		<>
 		<div className="container mx-auto">
 			<AppBanner></AppBanner>
 
@@ -23,6 +24,7 @@ const Home = () => {
 				</Link>
 			</div>
 		</div>
+		</>
 	);
 };
 
