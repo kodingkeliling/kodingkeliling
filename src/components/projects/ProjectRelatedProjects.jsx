@@ -13,7 +13,7 @@ const ProjectRelatedProjects = () => {
 			<div className="grid grid-cols-1 sm:grid-cols-4 gap-10">
 				{singleProjectData.RelatedProject.Projects.map((project) => {
 					return (
-						<a href={`/projects/${project.slug}`}>
+						<a href={`/projek/${project.slug}`}>
 						<img
 							src={project.img}
 							className="rounded-xl cursor-pointer"
