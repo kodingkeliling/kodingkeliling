@@ -4,8 +4,12 @@ import ProjectInfo from '../components/projects/ProjectInfo';
 import ProjectRelatedProjects from '../components/projects/ProjectRelatedProjects';
 import { SingleProjectProvider } from '../context/SingleProjectContext';
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 
 const ProjectSingle = () => {
+	useEffect(() => {
+        document.title = "Koding Keliling | Projek";
+    }, []);
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}

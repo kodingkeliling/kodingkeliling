@@ -3,10 +3,13 @@ import AppBanner from '../components/shared/AppBanner';
 import ProjectsGrid from '../components/projects/ProjectsGrid';
 import { ProjectsProvider } from '../context/ProjectsContext';
 import Button from '../components/reusable/Button';
+import { useEffect } from 'react';
 
 const Home = () => {
+	useEffect(() => {
+        document.title = "Koding Keliling | Home";
+    }, []);
 	return (
-		<>
 		<div className="container mx-auto">
 			<AppBanner></AppBanner>
 
@@ -24,7 +27,6 @@ const Home = () => {
 				</Link>
 			</div>
 		</div>
-		</>
 	);
 };
 

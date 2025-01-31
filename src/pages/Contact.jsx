@@ -1,8 +1,12 @@
 import { motion } from 'framer-motion';
 import ContactDetails from '../components/contact/ContactDetails';
 import ContactForm from '../components/contact/ContactForm';
+import { useEffect } from 'react';
 
 const Contact = () => {
+	useEffect(() => {
+        document.title = "Koding Keliling | Kontak";
+    }, []);
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
