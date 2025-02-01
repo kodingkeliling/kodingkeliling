@@ -40,7 +40,7 @@ const ContactDetails = () => {
 					))}
 				</ul>
 				<div className='flex items-center gap-2'>
-					<button data-tally-open="3qJKj9" data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" className='bg-secondBlue-light hover:bg-thirdBlue-light px-4 py-2 rounded-md text-white'><FaRegStar/></button>
+					<button data-tally-open="3qJKj9" data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" className='bg-secondBlue-light hover:bg-thirdBlue-light px-4 py-2 rounded-md text-white duration-200'><FaRegStar/></button>
 					<div className='flex items-center gap-2 dark:text-white'><FaArrowLeft className='animate-bounce-left'/> Ayoo beri ulasan!</div>
 				</div>
 			</div>
