@@ -1,4 +1,5 @@
 const selectOptions = [
+	'Greeting Website',
 	'Invitational Website',
 	'Portofolio Website',
 	'Company Profile',
