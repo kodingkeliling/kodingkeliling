@@ -37,7 +37,7 @@ const AppBanner = () => {
 					}}
 					className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
 				>
-					Layanan Pembuatan Portfolio, Company Profile, dan Invitation Website.
+					Layanan Pembuatan Portfolio, Company Profile, Invitation, dan Greeting Website.
 				</motion.p>
 				<motion.div
 					initial={{ opacity: 0 }}
