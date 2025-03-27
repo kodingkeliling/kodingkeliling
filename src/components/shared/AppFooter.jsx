@@ -14,7 +14,7 @@ const socialLinks = [
 	{
 		id: 1,
 		icon: <FiInstagram />,
-		url: 'https://www.instagram.com/educode.ai',
+		url: 'https://www.instagram.com/kodingkeliling',
 	},
 	{
 		id: 2,
