@@ -1,61 +1,40 @@
-## Setup
+Tentu! Berikut adalah contoh README yang bisa kamu gunakan untuk proyek **Koding Keliling**, berdasarkan informasi dari situs resminya:
 
-1. Make sure you have Node JS installed. If you don't have it:
+---
 
--   [Download it from nodejs.org](https://nodejs.org)
--   [Install it using NVM ](https://github.com/nvm-sh/nvm)
--   If you're on Mac, Homebrew is a good option too:
+# 📦 Koding Keliling
 
-```
-brew install node
-```
+**Koding Keliling** adalah solusi digital kreatif yang menyediakan layanan pembuatan website untuk berbagai kebutuhan—mulai dari portfolio pribadi, company profile, hingga undangan dan greeting digital.
 
-2. Clone the repo:
+## 🚀 Layanan Utama
 
-```
-git clone https://github.com/realstoman/react-tailwindcss-portfolio.git
-```
+- **Portfolio Website** – Tampilkan karya dan pencapaianmu secara profesional.
+- **Company Profile** – Bangun citra perusahaan dengan tampilan digital yang elegan.
+- **Invitation & Greeting Website** – Buat undangan dan ucapan yang berkesan dan interaktif.
 
-3. Open the project folder:
+## 📁 Contoh Proyek
 
-```
-cd react-tailwindcss-portfolio
-```
+Beberapa proyek yang telah kami kerjakan:
 
-4. Install packages and dependencies:
+- **IOM ITB** – Company Profile
+- **Jamjam** – Portfolio Website
+- **Valentine - Chalida** – Greeting Website
+- **Karavista** – Company Profile
+- **PSS LISMA UNPAS** – Company Profile
 
-```
-yarn
-```
+Lihat lebih banyak di halaman [Projek Koding Keliling](https://www.kodingkeliling.com/projek).
 
-4. NOTE: If you don't have yarn installed, you can install it globally using npm:
+## 📞 Kontak
 
-```
-npm install --global yarn
-```
+Ingin bekerja sama atau bertanya lebih lanjut? Hubungi kami melalui:
 
-5. Start a local dev server at `http://localhost:3000`:
+- WhatsApp: [Klik untuk chat](https://api.whatsapp.com/send/?phone=6281257578571&text=Hallo+admin+Koding+Keliling&type=phone_number&app_absent=0)
+- Instagram: [@kodingkeliling](https://instagram.com/kodingkeliling)
 
-```
-yarn start
-```
+## 🛠 Teknologi
 
-6. ##### Run tests:
+Website kami dibangun dengan teknologi web modern yang responsif dan mudah diakses di berbagai perangkat.
 
-```
-yarn test
-```
+## 📌 Tujuan
 
-## Notes
-
--   Always run `yarn install` after pulling new changes
--   I'll be constantly updating this repo as I'll be adding more sections to it, so please always check the projects section of this repo to see what tasks are under todo and in progress
--   Coming Soon [I'll be doing a screencast](https://www.youtube.com/realstoman). Soon I'll be uploading a video to my YouTube channel where I'll be going through the process of creating this portoflio
--   Illustrations from [unDraw](https://undraw.co) and [Freepik](https://freepik.com)
--   Images from [Unsplash](https://unsplash.com)
--   Feel free to use it as your own portfolio
--   Contributions are welcome
-
-### License
-
-[MIT](https://github.com/realstoman/react-tailwindcss-portfolio/blob/main/LICENSE)
+Memberikan solusi digital yang menarik, fungsional, dan sesuai dengan kebutuhan klien—baik individu maupun perusahaan.
