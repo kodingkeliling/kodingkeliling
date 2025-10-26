@@ -7,6 +7,7 @@
   NPM_VERSION = "9"
   CI = "false"
   GENERATE_SOURCEMAP = "false"
+  NPM_FLAGS = "--legacy-peer-deps"
 
 # Use stable build image
 [build.processing]
