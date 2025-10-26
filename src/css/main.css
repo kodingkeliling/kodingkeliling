@@ -708,6 +708,21 @@ video {
 .max-w-xl {
   max-width: 36rem;
 }
+@keyframes bounceLeft {
+
+  0%, 100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateX(-5px);
+    opacity: 0.8;
+  }
+}
+.animate-bounce-left {
+  animation: bounceLeft 1s ease-in-out infinite;
+}
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1062,6 +1077,9 @@ video {
 .duration-100 {
   transition-duration: 100ms;
 }
+.duration-200 {
+  transition-duration: 200ms;
+}
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -1258,6 +1276,10 @@ video {
 .dark\:text-ternary-light:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(246 247 248 / var(--tw-text-opacity, 1));
+}
+.dark\:text-white:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 .dark\:hover\:bg-primary-light:hover:is(.dark *) {
   --tw-bg-opacity: 1;

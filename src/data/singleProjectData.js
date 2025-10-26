@@ -13,17 +13,406 @@ import Jamjam2 from '../images/jamjam/image2.png';
 import Jamjam3 from '../images/jamjam/image3.png';
 import ValentineChalida1 from '../images/valentine-chalida/image1.png';
 import ValentineChalida2 from '../images/valentine-chalida/image2.png';
+import KsrUnpas1 from '../images/ksr-app/image1.png';
+import KsrUnpas2 from '../images/ksr-app/image2.png';
+import KsrUnpas3 from '../images/ksr-app/image3.png';
+import LismaUnpas1 from '../images/lisma-app/image1.png';
+import LismaUnpas2 from '../images/lisma-app/image2.png';
+import LismaUnpas3 from '../images/lisma-app/image3.png';
+import LllApp1 from '../images/lll-app/image1.png';
+import LllApp2 from '../images/lll-app/image2.png';
+import LllApp3 from '../images/lll-app/image3.png';
 
 // Import icons
 import {
-	FiFacebook,
 	FiInstagram,
-	FiLinkedin,
-	FiTwitter,
 	FiYoutube,
 } from 'react-icons/fi';
 
 export const singleProjectData = [
+// KSR
+	{
+	slug: '777luckylaunchatlucy',
+	ProjectHeader: {
+		title: '777 Lucky Launch at Lucy',
+		publishDate: '24 Sep 2025',
+		tags: 'Frontend / Backend',
+	},
+	ProjectImages: [
+		{
+			id: 1,
+			title: 'LLL - Section Hero LLL',
+			img: LllApp1,
+		},
+		{
+			id: 2,
+			title: 'LLL - Section Booking Tenant',
+			img: LllApp2,
+		},
+		{
+			id: 3,
+			title: 'LLL - Section Register Fun Run',
+			img: LllApp3,
+		},
+	],
+	ProjectInfo: {
+		ClientHeading: 'Tentang Pelanggan',
+		CompanyInfo: [
+			{
+				id: 1,
+				title: 'Nama',
+				details: '777 Lucky Launch at Lucy',
+			},
+			{
+				id: 2,
+				title: 'Layanan',
+				details: 'Frontend & Backend Development',
+			},
+			{
+				id: 3,
+				title: 'Website',
+				details: 'https://777luckylaunchatlucy.com',
+			},
+			{
+				id: 4,
+				title: 'Telp',
+				details: '-',
+			},
+		],
+		ObjectivesHeading: 'Capaian',
+		ObjectivesDetails:
+			'Website 777 Lucky Launch at Lucy merupakan platform utama untuk acara fun run dan bazar produk yang diselenggarakan oleh Lucy. Pengguna dapat dengan mudah mendaftar untuk mengikuti fun run secara online, serta booking tenant (stand) untuk mengikuti bazar produk melalui aplikasi ini. Fitur utama dari website ini adalah sistem pendaftaran peserta fun run dan reservasi tenant bazar yang praktis serta otomatis, sehingga memudahkan seluruh proses administrasi acara. Dengan antarmuka yang modern dan user-friendly, 777 Lucky Launch at Lucy memberikan pengalaman terbaik untuk peserta maupun tenant agar dapat terlibat langsung dalam rangkaian acara secara efisien dan tanpa hambatan.',
+		Technologies: [
+			{
+				title: 'Tools & Teknologi',
+				techs: [
+					'Typescript',
+					'Next.js',
+					'TailwindCSS',
+					'Spreadsheet',
+				],
+			},
+		],
+		ProjectDetailsHeading: 'Detail Projek',
+		ProjectDetails: [
+			{
+				id: 1,
+				details:
+					'Website 777 Lucky Launch at Lucy dibangun untuk mendukung event fun run serta bazar produk dari Lucy. Sistem digital ini memudahkan peserta mendaftar fun run secara online maupun melakukan reservasi tenant bazar produk dengan proses yang otomatis dan efisien. Setiap data pendaftaran langsung direkap secara real-time, sehingga memudahkan panitia dalam pengelolaan administrasi.',
+			},
+			{
+				id: 2,
+				details:
+					'Dalam perjalanan pengembangan, tantangan muncul pada implementasi pendaftaran peserta dan reservasi tenant yang fleksibel, serta memastikan keamanan data hingga kemudahan akses di berbagai perangkat. Integrasi otomatis ke spreadsheet membantu tim event mengelola data peserta tanpa proses manual yang rumit.',
+			},
+			{
+				id: 3,
+				details:
+					'Desain website dibuat modern serta user-friendly untuk memudahkan seluruh pengunjung, baik peserta fun run maupun tenant bazar. Fitur navigasi, konfirmasi pendaftaran otomatis, serta sistem booking yang terstruktur menjadi nilai tambah agar pengalaman pengguna berjalan lancar.',
+			},
+			{
+				id: 4,
+				details:
+					'Penerapan teknologi seperti Typescript, Next.js, TailwindCSS, serta integrasi spreadsheet menjadi fondasi utama sistem ini. Kolaborasi tim yang terkoordinasi memastikan setiap kebutuhan event dapat terpenuhi dengan baik melalui platform yang informatif dan mudah digunakan.',
+			},
+		],
+		SocialSharingHeading: 'Sosial Media',
+		SocialSharing: [
+			{
+				id: 1,
+				name: 'Instagram',
+				icon: <FiInstagram />,
+				url: 'https://www.instagram.com/limsaunpas',
+			},
+			{
+				id: 2,
+				name: 'Youtube',
+				icon: <FiYoutube />,
+				url: 'https://www.youtube.com/@lingkungsenimahasiswa8569',
+			},
+		],
+	},
+	RelatedProject: {
+		title: 'Projek Serupa',
+		Projects: [
+			{
+				id: 1,
+				title: 'LISMA UNPAS',
+				img: LismaUnpas1,
+				slug: 'limsa-unpas'
+			},
+			{
+				id: 1,
+				title: 'KSR UNPAS',
+				img: KsrUnpas1,
+				slug: 'karavista'
+			},
+			{
+				id: 1,
+				title: 'IOM ITB',
+				img: IomItb1,
+				slug: 'iom-itb'
+			},
+		],
+	},
+},
+
+// KSR
+	{
+	slug: 'ksr-unpas',
+	ProjectHeader: {
+		title: 'Koprs Sukarela UNPAS',
+		publishDate: '22 Agu 2025',
+		tags: 'Frontend / Backend',
+	},
+	ProjectImages: [
+		{
+			id: 1,
+			title: 'KSR UNPAS - Section Hero KSR',
+			img: KsrUnpas1,
+		},
+		{
+			id: 2,
+			title: 'KSR UNPAS - Section Tim Kami',
+			img: KsrUnpas2,
+		},
+		{
+			id: 3,
+			title: 'KSR UNPAS - Section Pendaftaran',
+			img: KsrUnpas3,
+		},
+	],
+	ProjectInfo: {
+		ClientHeading: 'Tentang Pelanggan',
+		CompanyInfo: [
+			{
+				id: 1,
+				title: 'Nama',
+				details: 'KSR UNPAS',
+			},
+			{
+				id: 2,
+				title: 'Layanan',
+				details: 'Frontend & Backend Development',
+			},
+			{
+				id: 3,
+				title: 'Website',
+				details: 'https://ksruniversitaspasundan.com',
+			},
+			{
+				id: 4,
+				title: 'Telp',
+				details: '-',
+			},
+		],
+		ObjectivesHeading: 'Capaian',
+		ObjectivesDetails:
+			'Website KSR (Korps Sukarela) UNPAS berhasil menjadi pusat informasi utama bagi organisasi KSR Universitas Pasundan. Dengan tampilan modern dan aksesibel, website ini memuat profil organisasi, program kegiatan, struktur kepengurusan, hingga informasi pendaftaran anggota baru secara lengkap dan terstruktur. Salah satu fitur utamanya adalah sistem pendaftaran anggota baru secara online, di mana data pendaftar langsung tersimpan otomatis pada spreadsheet, sehingga memudahkan proses administrasi dan pengelolaan data anggota. Teknologi yang digunakan seperti Typescript, Next.js, TailwindCSS, Tally.so, dan integrasi Spreadsheet, memastikan website ini tidak hanya informatif tetapi juga efisien dalam pengelolaan data dan mudah diakses oleh seluruh mahasiswa yang ingin bergabung dengan KSR.',
+		Technologies: [
+			{
+				title: 'Tools & Teknologi',
+				techs: [
+					'Typescript',
+					'Next.js',
+					'TailwindCSS',
+					'Tally.so',
+					'Spreadsheet',
+				],
+			},
+		],
+		ProjectDetailsHeading: 'Detail Projek',
+		ProjectDetails: [
+			{
+				id: 1,
+				details:
+					'Projek ini berhasil mengembangkan website organisasi KSR UNPAS dengan tampilan modern, informatif, serta mudah diakses oleh mahasiswa. Website menyediakan fitur-fitur utama seperti halaman profil organisasi, informasi program kegiatan, struktur kepengurusan, dan sistem pendaftaran anggota baru secara online. Dengan antarmuka yang user-friendly dan desain yang clean, seluruh informasi dan fitur yang dibutuhkan anggota dapat diakses dengan cepat dan mudah.',
+			},
+			{
+				id: 2,
+				details:
+					'KSR UNPAS kini memiliki sistem pendaftaran anggota baru secara digital yang terintegrasi langsung ke spreadsheet, sehingga proses rekap dan pengelolaan data anggota menjadi jauh lebih terstruktur dan efisien. Selain itu, admin dapat dengan mudah memantau data pendaftar dan melakukan rekap secara otomatis tanpa proses manual yang memakan waktu.',
+			},
+			{
+				id: 3,
+				details:
+					'Dalam proses pengembangan, beberapa tantangan muncul seperti integrasi form pendaftaran dengan spreadsheet agar data dapat terekam otomatis dan aman, serta memastikan website tetap responsif di berbagai perangkat. Optimalisasi kecepatan akses dan kemudahan navigasi juga menjadi perhatian khusus agar pengalaman pengguna tetap maksimal.',
+			},
+			{
+				id: 4,
+				details:
+					'Dengan kolaborasi tim yang solid serta pemilihan teknologi yang tepat seperti Typescript, Next.js, TailwindCSS, dan Tally.so, seluruh kendala dalam pengembangan website KSR UNPAS berhasil diatasi. Hasilnya adalah website informatif dan efisien yang mendukung aktivitas organisasi secara digital dan modern.',
+			},
+		],
+		SocialSharingHeading: 'Sosial Media',
+		SocialSharing: [
+			{
+				id: 1,
+				name: 'Instagram',
+				icon: <FiInstagram />,
+				url: 'https://www.instagram.com/ksrunpas',
+			},
+			{
+				id: 2,
+				name: 'Youtube',
+				icon: <FiYoutube />,
+				url: 'https://www.youtube.com/@ksrunpas8325',
+			},
+		],
+	},
+	RelatedProject: {
+		title: 'Projek Serupa',
+		Projects: [
+			{
+				id: 1,
+				title: 'Lisma UNPAS',
+				img: LismaUnpas1,
+				slug: 'pss-lisma'
+			},
+			{
+				id: 1,
+				title: 'Karavista',
+				img: Karavista3,
+				slug: 'karavista'
+			},
+			{
+				id: 1,
+				title: 'IOM ITB',
+				img: IomItb1,
+				slug: 'iom-itb'
+			},
+		],
+	},
+},
+
+// Lisma
+	{
+	slug: 'limsa-unpas',
+	ProjectHeader: {
+		title: 'Lingkung Seni Mahasiswa UNPAS',
+		publishDate: '22 Agu 2025',
+		tags: 'Frontend / Backend',
+	},
+	ProjectImages: [
+		{
+			id: 1,
+			title: 'LISMA UNPAS - Section Hero Lisma',
+			img: LismaUnpas1,
+		},
+		{
+			id: 2,
+			title: 'LISMA UNPAS - Section Tim Kami',
+			img: LismaUnpas2,
+		},
+		{
+			id: 3,
+			title: 'LISMA UNPAS - Section Pendaftaran',
+			img: LismaUnpas3,
+		},
+	],
+	ProjectInfo: {
+		ClientHeading: 'Tentang Pelanggan',
+		CompanyInfo: [
+			{
+				id: 1,
+				title: 'Nama',
+				details: 'LISMA UNPAS',
+			},
+			{
+				id: 2,
+				title: 'Layanan',
+				details: 'Frontend & Backend Development',
+			},
+			{
+				id: 3,
+				title: 'Website',
+				details: 'https://limsa-unpas.com',
+			},
+			{
+				id: 4,
+				title: 'Telp',
+				details: '-',
+			},
+		],
+		ObjectivesHeading: 'Capaian',
+		ObjectivesDetails:
+			'Website LISMA UNPAS berhasil menjadi wadah informasi utama bagi Lingkung Seni Mahasiswa Universitas Pasundan. Melalui tampilan yang modern dan aksesibel, website ini menampilkan profil organisasi, unit kegiatan, struktur kepengurusan, hingga informasi pendaftaran anggota baru secara lengkap dan terstruktur. Salah satu fitur unggulannya adalah pendaftaran anggota baru secara online, di mana data pendaftar langsung tersimpan otomatis pada spreadsheet, sehingga memudahkan proses administrasi dan pengelolaan anggota. Teknologi yang digunakan seperti Typescript, Next.js, TailwindCSS, Tally.so, dan integrasi Spreadsheet, memastikan website ini tidak hanya informatif namun juga efisien dalam pengelolaan data dan mudah diakses oleh seluruh mahasiswa yang ingin bergabung dengan LISMA.',
+		Technologies: [
+			{
+				title: 'Tools & Teknologi',
+				techs: [
+					'Typescript',
+					'Next.js',
+					'TailwindCSS',
+					'Tally.so',
+					'Spreadsheet',
+				],
+			},
+		],
+		ProjectDetailsHeading: 'Detail Projek',
+		ProjectDetails: [
+			{
+				id: 1,
+				details:
+					'Projek ini berhasil mengembangkan website organisasi LISMA UNPAS dengan tampilan modern, informatif, dan mudah diakses oleh seluruh mahasiswa. Website ini dilengkapi berbagai fitur utama seperti halaman profil organisasi, list unit kegiatan, struktur kepengurusan interaktif, serta sistem pendaftaran anggota baru secara online. Dengan antarmuka yang user-friendly dan desain yang clean, seluruh informasi organisasi dapat diakses dengan mudah dan cepat.',
+			},
+			{
+				id: 2,
+				details:
+					'LISMA UNPAS kini memiliki sistem pendaftaran anggota baru secara digital yang langsung terhubung ke spreadsheet, sehingga proses rekap dan manajemen data menjadi lebih terstruktur, aman, dan mempermudah admin dalam mengelola data anggota. Selain itu, website ini juga mendukung publikasi acara dan pengumuman penting agar bisa menjangkau lebih banyak mahasiswa di lingkungan kampus.',
+			},
+			{
+				id: 3,
+				details:
+					'Dalam proses pengembangan, tim menghadapi tantangan pada integrasi form pendaftaran dengan spreadsheet agar data dapat terekam otomatis tanpa kendala, serta memastikan website tetap responsif di berbagai perangkat. Optimalisasi kecepatan akses dan kemudahan navigasi untuk pengunjung juga menjadi perhatian khusus agar pengalaman pengguna tetap maksimal.',
+			},
+			{
+				id: 4,
+				details:
+					'Melalui kolaborasi tim dan pemilihan teknologi yang sesuai seperti Typescript, Next.js, TailwindCSS, dan Tally.so, seluruh tantangan pada pengembangan website LISMA UNPAS dapat diatasi dan menghasilkan platform informatif serta efisien yang siap menunjang aktivitas organisasi secara digital.',
+			},
+		],
+		SocialSharingHeading: 'Sosial Media',
+		SocialSharing: [
+			{
+				id: 1,
+				name: 'Instagram',
+				icon: <FiInstagram />,
+				url: 'https://www.instagram.com/limsaunpas',
+			},
+			{
+				id: 2,
+				name: 'Youtube',
+				icon: <FiYoutube />,
+				url: 'https://www.youtube.com/@lingkungsenimahasiswa8569',
+			},
+		],
+	},
+	RelatedProject: {
+		title: 'Projek Serupa',
+		Projects: [
+			{
+				id: 1,
+				title: 'PSS LISMA UNPAS',
+				img: PssLisma2,
+				slug: 'pss-lisma'
+			},
+			{
+				id: 1,
+				title: 'Karavista',
+				img: Karavista3,
+				slug: 'karavista'
+			},
+			{
+				id: 1,
+				title: 'IOM ITB',
+				img: IomItb1,
+				slug: 'iom-itb'
+			},
+		],
+	},
+},
+
 // IOM ITB
 	{
 	slug: 'iom-itb',

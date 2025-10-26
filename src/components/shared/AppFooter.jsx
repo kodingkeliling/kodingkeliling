@@ -1,13 +1,8 @@
 import {
 	FiGithub,
-	FiTwitter,
-	FiLinkedin,
-	FiGlobe,
-	FiYoutube,
 	FiInstagram,
 } from 'react-icons/fi';
 import { FaWhatsapp } from "react-icons/fa";
-import Whatsapp from '../../images/whatsapp.png';
 import AppFooterCopyright from './AppFooterCopyright';
 
 const socialLinks = [
