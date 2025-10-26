@@ -5,6 +5,12 @@
 [build.environment]
   NODE_VERSION = "18"
   NPM_VERSION = "9"
+  CI = "false"
+  GENERATE_SOURCEMAP = "false"
+
+# Use stable build image
+[build.processing]
+  skip_processing = false
 
 [[redirects]]
   from = "/*"
