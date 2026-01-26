@@ -51,11 +51,11 @@ const AppBanner = () => {
 				>
 					<a
 						// download="Stoman-Resume.pdf"
-						href="https://www.instagram.com/p/DF2Z9XvP7KJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+						href="https://www.instagram.com/p/DT-KnmEjy-R/?igsh=MTllamJtemRqNGs3MQ=="
 						className="font-general-medium flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-blue-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-blue-50 focus:ring-1 focus:ring-blue-900 hover:bg-secondBlue-light text-gray-500 hover:text-white duration-500"
 						aria-label="Price List"
-						target='_blank' 
-						rel="noreferrer" 
+						target='_blank'
+						rel="noreferrer"
 					>
 						<FiInstagram className="mr-2 sm:mr-3 h-5 w-5 sn:w-6 sm:h-6 duration-100"></FiInstagram>
 						<span className="text-sm sm:text-lg font-general-medium duration-100">
