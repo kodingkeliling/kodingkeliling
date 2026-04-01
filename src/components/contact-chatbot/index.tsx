@@ -210,8 +210,8 @@ export const ContactChatBot = () => {
                             onError={(e) => { e.currentTarget.src = "/favicon.png"; }}
                         />
                     </div>
-                    <div className="w-40 md:min-w-0 md:w-full">
-                        <h3 className="text-sm sm:text-lg font-bold truncate">Koding Keliling AI Support</h3>
+                    <div className="w-40 sm:min-w-0 sm:w-full">
+                        <h3 className="text-sm xs:text-lg font-bold truncate">Koding Keliling AI Support</h3>
                         <div className="flex items-center gap-1.5">
                             <span className="size-2 rounded-full bg-success-500 animate-pulse" />
                             <p className="text-xs text-white/80">Online</p>
