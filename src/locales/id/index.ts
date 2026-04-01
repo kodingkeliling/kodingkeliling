@@ -5,16 +5,17 @@ export const id = {
     services,
     projects,
     hero: {
-        badge: "Solusi Digital Terpercaya",
+        badge: "Jasa Pembuatan Website & Aplikasi No. 1",
         title: "Wujudkan Ide Digital Anda Bersama ",
         brand: "KodingKeliling",
-        description: "Penyedia layanan pembuatan website profesional, software kustom, dan aplikasi mobile yang dirancang khusus untuk meningkatkan nilai bisnis Anda secara digital.",
+        description: "Jasa pembuatan website profesional, software kustom, dan aplikasi mobile terbaik di Bandung, Jakarta, dan seluruh Indonesia. Dirancang khusus untuk meningkatkan nilai bisnis Anda secara digital.",
         ctaConsultation: "Konsultasi Sekarang",
         ctaServices: "Lihat Layanan",
-        freeConsultation: "Konsultasi Gratis Rp. 0"
+        freeConsultation: "Konsultasi Gratis Rp. 0",
+        fullOwnership: "100% Source Code Menjadi Milik Anda"
     },
     footer: {
-        description: "KodingKeliling adalah mitra teknologi Anda untuk solusi digital inovatif. Kami membantu bisnis berkembang melalui teknologi.",
+        description: "KodingKeliling adalah mitra teknologi Anda untuk jasa pembuatan website & aplikasi inovatif. Kami membantu bisnis berkembang dari Bandung & Jakarta ke seluruh penjuru Indonesia.",
         quickLinks: "Tautan Cepat",
         contactNow: "Kontak Sekarang",
         services: "Layanan",

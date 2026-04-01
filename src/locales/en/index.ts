@@ -11,7 +11,8 @@ export const en = {
         description: "Professional website development, custom software, and mobile apps provider specifically designed to increase your business value digitally.",
         ctaConsultation: "Consult Now",
         ctaServices: "See Services",
-        freeConsultation: "Free Consultation Rp. 0"
+        freeConsultation: "Free Consultation Rp. 0",
+        fullOwnership: "100% Source Code Ownership"
     },
     footer: {
         description: "KodingKeliling is your technology partner for innovative digital solutions. We help businesses grow through technology.",

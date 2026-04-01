@@ -19,11 +19,25 @@ const inter = Inter({
 
 export const metadata: Metadata = {
     title: {
-        default: "KodingKeliling — Solusi Pembuatan Website & Software Kustom Profesional",
+        default: "KodingKeliling — Jasa Pembuatan Website & Aplikasi Kustom Profesional Bandung & Jakarta",
         template: "%s | KodingKeliling",
     },
-    description: "KodingKeliling menyediakan layanan pembuatan website, web app, software kustom (ERP/CRM), dan aplikasi mobile Android & iOS dengan performa tinggi dan SEO-friendly.",
-    keywords: ["pembuatan website", "web app", "software kustom", "aplikasi mobile", "Android & iOS", "ERP kustom", "CRM kustom", "KodingKeliling", "solusi digital"],
+    description: "KodingKeliling adalah jasa pembuatan website, web app, software kustom (ERP/CRM), dan aplikasi mobile Android & iOS profesional di Bandung, Jakarta, dan Indonesia dengan performa tinggi serta SEO-friendly.",
+    keywords: [
+        "jasa pembuatan website",
+        "jasa pembuatan aplikasi",
+        "jasa pembuatan software",
+        "pembuatan website bandung",
+        "pembuatan website jakarta",
+        "jasa website indonesia",
+        "software kustom",
+        "aplikasi mobile",
+        "Android & iOS",
+        "ERP kustom",
+        "CRM kustom",
+        "KodingKeliling",
+        "solusi digital"
+    ],
     authors: [{ name: "KodingKeliling" }],
     creator: "KodingKeliling",
     publisher: "KodingKeliling",
@@ -31,8 +45,8 @@ export const metadata: Metadata = {
         type: "website",
         locale: "id_ID",
         url: "https://kodingkeliling.com",
-        title: "KodingKeliling — Solusi Pembuatan Website & Software Kustom Profesional",
-        description: "KodingKeliling menyediakan layanan pembuatan website, web app, software kustom, dan aplikasi mobile dengan performa tinggi.",
+        title: "KodingKeliling — Jasa Pembuatan Website & Aplikasi Kustom Profesional Bandung & Jakarta",
+        description: "KodingKeliling menyediakan jasa pembuatan website, web app, software kustom, dan aplikasi mobile profesional di Bandung, Jakarta, dan Indonesia.",
         siteName: "KodingKeliling",
     },
 };

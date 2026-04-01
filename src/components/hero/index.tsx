@@ -80,15 +80,27 @@ export const Hero = () => {
                             </Button>
                         </motion.div>
 
-                        <motion.div 
-                            variants={fadeInUp}
-                            className="flex items-center gap-2 text-sm font-semibold text-success-700"
-                        >
-                            <span className="inline-flex size-5 items-center justify-center rounded-full bg-success-secondary text-success-700">
-                                ✓
-                            </span>
-                            {hero.freeConsultation} 💸
-                        </motion.div>
+                        <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+                            <motion.div 
+                                variants={fadeInUp}
+                                className="flex items-center gap-2 text-sm font-semibold text-success-700"
+                            >
+                                <span className="inline-flex size-5 items-center justify-center rounded-full bg-success-secondary text-success-700">
+                                    ✓
+                                </span>
+                                {hero.freeConsultation} 💸
+                            </motion.div>
+
+                            <motion.div 
+                                variants={fadeInUp}
+                                className="flex items-center gap-2 text-sm font-semibold text-brand-700"
+                            >
+                                <span className="inline-flex size-5 items-center justify-center rounded-full bg-brand-primary text-brand-700">
+                                    ✓
+                                </span>
+                                {hero.fullOwnership} 🚀
+                            </motion.div>
+                        </div>
                     </motion.div>
                     
                     <motion.div 

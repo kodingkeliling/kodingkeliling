@@ -12,7 +12,7 @@ export const PromoMarquee = () => {
 
     return (
         <div className="bg-brand-solid py-2 text-white overflow-hidden relative border-y border-white/10">
-            <div className="flex animate-marquee-fast whitespace-nowrap">
+            <div className="flex animate-marquee-slow whitespace-nowrap">
                 <div className="flex shrink-0 items-center justify-around gap-8 pr-8 font-bold tracking-wider text-[10px] md:text-sm uppercase">
                     {Array(8).fill(promoText).map((text, i) => (
                         <span key={i}>{text}</span>
@@ -26,12 +26,12 @@ export const PromoMarquee = () => {
             </div>
 
             <style jsx>{`
-                @keyframes marquee-fast {
+                @keyframes marquee-slow {
                     0% { transform: translateX(0); }
                     100% { transform: translateX(-50%); }
                 }
-                .animate-marquee-fast {
-                    animation: marquee-fast 60s linear infinite;
+                .animate-marquee-slow {
+                    animation: marquee-slow 150s linear infinite;
                     width: max-content;
                 }
             `}</style>
