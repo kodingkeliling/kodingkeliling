@@ -5,7 +5,7 @@ export const id = {
     services,
     projects,
     hero: {
-        badge: "Jasa Pembuatan Website & Aplikasi No. 1",
+        badge: "Jasa Pembuatan Web & APP No. 1",
         title: "Wujudkan Ide Digital Anda Bersama ",
         brand: "KodingKeliling",
         description: "Jasa pembuatan website profesional, software kustom, dan aplikasi mobile terbaik di Bandung, Jakarta, dan seluruh Indonesia. Dirancang khusus untuk meningkatkan nilai bisnis Anda secara digital.",
