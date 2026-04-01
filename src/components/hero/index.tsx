@@ -73,7 +73,7 @@ export const Hero = () => {
                                 color="secondary"
                                 size="xl"
                                 className="w-full sm:w-auto font-bold"
-                                href="#layanan"
+                                href="/services"
                             >
                                 {hero.ctaServices}
                             </Button>
