@@ -3,7 +3,8 @@
 import React from "react";
 import { Logo } from "@/components/logo";
 import { Button } from "@/components/base/buttons/button";
-import { Globe01, Mail01, MessageCircle01 } from "@untitledui/icons";
+import { Mail01 } from "@untitledui/icons";
+import { Instagram, GitHub } from "@/components/foundations/social-icons";
 import { useLanguage } from "@/context/LanguageContext";
 
 export const FooterSection = () => {
@@ -20,13 +21,13 @@ export const FooterSection = () => {
                             {footer.description} 🚀
                         </p>
                         <div className="flex gap-4">
-                            <Button color="secondary" size="lg" iconLeading={Globe01} aria-label="Website" />
-                            <Button color="secondary" size="lg" iconLeading={Mail01} aria-label="Email" />
-                            <Button color="secondary" size="lg" iconLeading={MessageCircle01} aria-label="WhatsApp" />
+                            <Button color="secondary" size="lg" iconLeading={Mail01} aria-label="Email" href="mailto:halo@kodingkeliling.com" />
+                            <Button color="secondary" size="lg" iconLeading={Instagram} aria-label="Instagram" href="https://instagram.com/kodingkeliling" target="_blank" />
+                            <Button color="secondary" size="lg" iconLeading={GitHub} aria-label="GitHub" href="https://github.com/kodingkeliling" target="_blank" />
                         </div>
                     </div>
-                    
-                    <div className="grid grid-cols-2 gap-12 sm:grid-cols-2">
+
+                    <div className="grid grid-cols-1 gap-12 sm:grid-cols-2">
                         <div className="flex flex-col gap-4 text-center lg:text-left">
                             <h4 className="text-sm font-semibold text-tertiary">{footer.quickLinks}</h4>
                             <ul className="flex flex-col gap-3 font-semibold text-primary">
@@ -46,7 +47,7 @@ export const FooterSection = () => {
                         </div>
                     </div>
                 </div>
-                
+
                 <div className="mt-20 flex flex-col items-center justify-between gap-6 border-t border-secondary pt-8 md:flex-row md:items-center">
                     <p className="text-sm text-tertiary">
                         {footer.copyright}
