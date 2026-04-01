@@ -27,7 +27,7 @@ export const FooterSection = () => {
                             </BadgeWithDot>
                         </div>
                         <div className="flex gap-4">
-                            <Button color="secondary" size="lg" iconLeading={Mail01} aria-label="Email" href="mailto:halo@kodingkeliling.com" />
+                            <Button color="secondary" size="lg" iconLeading={Mail01} aria-label="Email" href="mailto:kodingkeliling@gmail.com" />
                             <Button color="secondary" size="lg" iconLeading={Instagram} aria-label="Instagram" href="https://instagram.com/kodingkeliling" target="_blank" />
                             <Button color="secondary" size="lg" iconLeading={GitHub} aria-label="GitHub" href="https://github.com/kodingkeliling" target="_blank" />
                         </div>
