@@ -84,18 +84,20 @@ export const ProjectsSection = ({ limit }: ProjectsSectionProps) => {
                                         e.currentTarget.src = "/favicon.png";
                                     }}
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col justify-end p-6">
-                                    <Button
-                                        color="primary"
-                                        size="md"
-                                        href={project.link}
-                                        target="_blank"
-                                        iconLeading={LinkExternal01}
-                                        className="w-full"
-                                    >
-                                        {t.common.visitWebsite}
-                                    </Button>
-                                </div>
+                                {project.link && (
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col justify-end p-6">
+                                        <Button
+                                            color="primary"
+                                            size="md"
+                                            href={project.link}
+                                            target="_blank"
+                                            iconLeading={LinkExternal01}
+                                            className="w-full"
+                                        >
+                                            {t.common.visitWebsite}
+                                        </Button>
+                                    </div>
+                                )}
                             </div>
                             <div className="flex flex-col gap-3 p-5 bg-primary">
                                 <div className="flex items-center justify-between">

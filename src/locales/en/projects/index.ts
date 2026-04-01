@@ -15,7 +15,7 @@ export const projects = [
         category: "Registration & Booking",
         description: "Modern company profile website for the Lucky Launch event at Lucy in the Sky.",
         image: "/images/lll-app/image1.png",
-        link: "#",
+        link: "https://777luckylaunchatlucy.com",
         tech: ["React", "Motion", "Vite"],
         rating: 5
     },
@@ -25,17 +25,17 @@ export const projects = [
         category: "Comunity Profile",
         description: "Volunteer information portal and digital registration for members.",
         image: "/images/ksr-app/image1.png",
-        link: "https://ksrunpas.or.id",
+        link: "https://ksruniversitaspasundan.com",
         tech: ["Next.js", "Firebase", "Tailwind"],
         rating: 4.8
     },
     {
         id: "3",
-        title: "LISMA UNPAS Dashboard",
+        title: "LISMA UNPAS",
         category: "Web App",
-        description: "Internal dashboard for managing the LISMA student art group.",
+        description: "Organization Profile Website for LISMA UNPAS.",
         image: "/images/lisma-app/image1.png",
-        link: "#",
+        link: "https://lisma-unpas.com",
         tech: ["Vue.js", "Laravel", "PostgreSQL"],
         rating: 4.9
     },
@@ -45,7 +45,7 @@ export const projects = [
         category: "Donation and Comunity Website",
         description: "Trusted self-donation platform for ITB students prioritizing transparency.",
         image: "/images/iom/image1.png",
-        link: "https://iom-itb.id",
+        link: "https://www.iom-itb.id",
         tech: ["PHP", "MySQL", "JavaScript"],
         rating: 5
     },
@@ -55,7 +55,7 @@ export const projects = [
         category: "Portfolio",
         description: "Flexible and interactive personal portfolio website.",
         image: "/images/jamjam/image1.png",
-        link: "#",
+        link: "https://muhjam.github.io/jamjam.com",
         tech: ["Astro", "Tailwind", "Motion"],
         rating: 5
     },
@@ -65,7 +65,7 @@ export const projects = [
         category: "Greeting Site",
         description: "Interactive greeting website with smooth animations.",
         image: "/images/valentine-chalida/image2.png",
-        link: "#",
+        link: "https://kodingkeliling.github.io/valentine",
         tech: ["HTML5", "CSS3", "GSAP"],
         rating: 5
     },
@@ -85,7 +85,7 @@ export const projects = [
         category: "Festival",
         description: "PSS LISMA UNPAS Art Study Center portal for contemporary research.",
         image: "/images/pss-lisma/image2.png",
-        link: "#",
+        link: "https://www.psslismaunpasbdg.com/",
         tech: ["React", "Material UI", "Node.js"],
         rating: 4.8
     }
