@@ -200,7 +200,7 @@ export const ContactChatBot = () => {
     return (
         <div className="flex flex-1 h-full w-full flex-col overflow-hidden bg-[#e5ddd5] shadow-2xl text-gray-900">
             {/* Header */}
-            <div className="flex items-center justify-between bg-[#075e54] p-5 text-white">
+            <div className="flex items-center justify-between bg-[#075e54] py-5 px-2 md:px-5 text-white">
                 <div className="flex items-center gap-4">
                     <div className="rounded-full bg-white p-1 flex items-center justify-center size-10 sm:size-12 overflow-hidden shadow-sm flex-shrink-0">
                         <img
@@ -210,7 +210,7 @@ export const ContactChatBot = () => {
                             onError={(e) => { e.currentTarget.src = "/favicon.png"; }}
                         />
                     </div>
-                    <div className="w-40 sm:min-w-0 sm:w-full">
+                    <div className="min-w-0">
                         <h3 className="text-sm xs:text-lg font-bold truncate">Koding Keliling AI Support</h3>
                         <div className="flex items-center gap-1.5">
                             <span className="size-2 rounded-full bg-success-500 animate-pulse" />
@@ -298,7 +298,7 @@ export const ContactChatBot = () => {
             </div>
 
             {/* Input Area */}
-            <div className="bg-[#f0f2f5] p-4 pb-8 flex items-center gap-4">
+            <div className="bg-[#f0f2f5] py-4 px-2 md:px-4 pb-8 flex items-center gap-4">
                 <div className="flex-1 relative">
                     <input
                         type="text"
