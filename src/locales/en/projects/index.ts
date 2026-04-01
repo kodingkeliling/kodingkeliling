@@ -45,7 +45,7 @@ export const projects = [
         category: "Donation and Comunity Website",
         description: "Trusted self-donation platform for ITB students prioritizing transparency.",
         image: "/images/iom/image1.png",
-        link: "https://iom.itb.ac.id",
+        link: "https://iom-itb.id",
         tech: ["PHP", "MySQL", "JavaScript"],
         rating: 5
     },

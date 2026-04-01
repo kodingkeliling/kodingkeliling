@@ -45,7 +45,7 @@ export const projects = [
         category: "Website Donasi dan Komunitas",
         description: "Platform donasi mandiri terpercaya mahasiswa ITB yang mengedepankan transparansi.",
         image: "/images/iom/image1.png",
-        link: "https://iom.itb.ac.id",
+        link: "https://iom-itb.id",
         tech: ["PHP", "MySQL", "JavaScript"],
         rating: 5
     },
