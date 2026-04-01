@@ -6,6 +6,7 @@ import { Button } from "@/components/base/buttons/button";
 import { ArrowNarrowRight, Monitor01, Code02, Phone01, LayersTwo01 } from "@untitledui/icons";
 import { useLanguage } from "@/context/LanguageContext";
 import { motion } from "motion/react";
+import { BadgeWithDot } from "@/components/base/badges/badges";
 
 const iconsMap: Record<string, any> = {
     Monitor01,
@@ -52,8 +53,13 @@ export const ServicesSection = () => {
                     <p className="mt-4 max-w-2xl text-lg text-tertiary">
                         {t.common.ourServicesDesc}
                     </p>
-                    <div className="mt-6 flex items-center gap-2 rounded-full bg-success-primary px-4 py-1.5 text-md font-bold text-success-700">
-                        {t.common.consultationFree}
+                    <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
+                        <BadgeWithDot color="success" size="lg">
+                            {t.common.consultationFree} 💸
+                        </BadgeWithDot>
+                        <BadgeWithDot color="brand" size="lg">
+                            {t.hero.fullOwnership} 🚀
+                        </BadgeWithDot>
                     </div>
                 </motion.div>
 

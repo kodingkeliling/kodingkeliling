@@ -12,7 +12,7 @@ export const en = {
         ctaConsultation: "Consult Now",
         ctaServices: "See Services",
         freeConsultation: "Free Consultation Rp. 0",
-        fullOwnership: "100% Source Code Ownership"
+        fullOwnership: "100% Code Ownership"
     },
     footer: {
         description: "KodingKeliling is your technology partner for innovative digital solutions. We help businesses grow through technology.",

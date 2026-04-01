@@ -6,6 +6,7 @@ import { Button } from "@/components/base/buttons/button";
 import { Mail01 } from "@untitledui/icons";
 import { Instagram, GitHub } from "@/components/foundations/social-icons";
 import { useLanguage } from "@/context/LanguageContext";
+import { BadgeWithDot } from "@/components/base/badges/badges";
 
 export const FooterSection = () => {
     const { t } = useLanguage();
@@ -20,6 +21,11 @@ export const FooterSection = () => {
                         <p className="max-w-md text-center text-lg text-tertiary lg:text-left">
                             {footer.description} 🚀
                         </p>
+                        <div className="flex flex-wrap justify-center gap-2 lg:justify-start">
+                            <BadgeWithDot color="brand" size="md">
+                                {t.hero.fullOwnership}
+                            </BadgeWithDot>
+                        </div>
                         <div className="flex gap-4">
                             <Button color="secondary" size="lg" iconLeading={Mail01} aria-label="Email" href="mailto:halo@kodingkeliling.com" />
                             <Button color="secondary" size="lg" iconLeading={Instagram} aria-label="Instagram" href="https://instagram.com/kodingkeliling" target="_blank" />

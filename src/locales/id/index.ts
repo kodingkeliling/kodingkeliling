@@ -12,7 +12,7 @@ export const id = {
         ctaConsultation: "Konsultasi Sekarang",
         ctaServices: "Lihat Layanan",
         freeConsultation: "Konsultasi Gratis Rp. 0",
-        fullOwnership: "100% Source Code Menjadi Milik Anda"
+        fullOwnership: "100% Hak Milik Kode"
     },
     footer: {
         description: "KodingKeliling adalah mitra teknologi Anda untuk jasa pembuatan website & aplikasi inovatif. Kami membantu bisnis berkembang dari Bandung & Jakarta ke seluruh penjuru Indonesia.",

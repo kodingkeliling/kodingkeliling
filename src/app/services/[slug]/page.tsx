@@ -7,6 +7,7 @@ import { Check, Monitor01, Code02, Phone01, LayersTwo01 } from "@untitledui/icon
 import { FeaturedIcon } from "@/components/foundations/featured-icon/featured-icon";
 import { useLanguage } from "@/context/LanguageContext";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { BadgeWithDot } from "@/components/base/badges/badges";
 
 const iconsMap: Record<string, any> = {
     Monitor01,
@@ -61,14 +62,22 @@ export default function ServiceDetailPage() {
                         </div>
                     </div>
 
-                    <div className="mt-16">
+                    <div className="mt-16 flex flex-col gap-6">
+                        <div className="flex flex-wrap items-center gap-4">
+                            <BadgeWithDot color="success" size="lg">
+                                Gratis Konsultasi 💸
+                            </BadgeWithDot>
+                            <BadgeWithDot color="brand" size="lg">
+                                {t.hero.fullOwnership} 🚀
+                            </BadgeWithDot>
+                        </div>
                         <Button
                             size="xl"
                             href={process.env.NEXT_PUBLIC_WHATSAPP_LINK}
                             target="_blank"
                             className="w-full sm:w-auto font-bold"
                         >
-                            Konsultasi Gratis Sekarang
+                            Konsultasi Sekarang
                         </Button>
                     </div>
                 </div>
