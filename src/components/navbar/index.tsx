@@ -99,16 +99,22 @@ export const Navbar = () => {
                 isMenuOpen ? "top-[80px] opacity-100" : "top-[-100%] opacity-0"
             )}>
                 <nav className="flex flex-col items-center justify-center gap-8 py-12">
-                    {navItems.map((item) => (
-                        <Link
-                            key={item.key}
-                            href={item.href}
-                            className="text-display-xs font-bold text-primary hover:text-brand transition-all"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            {navLabels[language][item.key]}
-                        </Link>
-                    ))}
+                    {navItems.map((item) => {
+                        const isActive = pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href));
+                        return (
+                            <Link
+                                key={item.key}
+                                href={item.href}
+                                className={cx(
+                                    "text-display-xs text-primary hover:text-brand transition-all",
+                                    isActive ? "font-semibold" : "font-normal"
+                                )}
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                {navLabels[language][item.key]}
+                            </Link>
+                        );
+                    })}
                     <Button
                         size="xl" className="mt-4"
                         href={process.env.NEXT_PUBLIC_WHATSAPP_LINK || "#"}

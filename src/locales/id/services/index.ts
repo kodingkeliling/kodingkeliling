@@ -31,7 +31,7 @@ export const services = [
     },
     {
         id: "4",
-        title: "Platform Bisnis 'Beli Putus'",
+        title: "Platform Bisnis",
         slug: "ready-to-use",
         description: "Miliki sistem IT seutuhnya tanpa biaya langganan bulanan. Investasi sekali untuk aset digital jangka panjang Anda.",
         detailDescription: "Kami menawarkan model kepemilikan penuh. Semua kode sumber menjadi milik Anda, memberikan kebebasan dan keamanan investasi jangka panjang.",

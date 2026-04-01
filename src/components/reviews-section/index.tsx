@@ -24,7 +24,7 @@ const reviews = [
     {
         name: "Ranca Gigih Pramudita",
         role: "Barista Coffee Shop",
-        review: "Sistem kustom 'Beli Putus' dari KodingKeliling benar-benar solusi tepat untuk efisiensi bisnis kami. Tidak ada biaya langganan bulanan yang memberatkan, tapi fiturnya lengkap dan scalable. Terima kasih!",
+        review: "Sistem kustom dari KodingKeliling benar-benar solusi tepat untuk efisiensi bisnis kami. Tidak ada biaya langganan bulanan yang memberatkan, tapi fiturnya lengkap dan scalable. Terima kasih!",
         rating: 5,
         avatar: "/images/ranca.png",
     },
@@ -45,9 +45,9 @@ const containerVariants = {
 
 const itemVariants = {
     hidden: { opacity: 0, scale: 0.9, y: 20 },
-    visible: { 
-        opacity: 1, 
-        scale: 1, 
+    visible: {
+        opacity: 1,
+        scale: 1,
         y: 0,
         transition: { duration: 0.5, ease: "easeOut" }
     }
@@ -58,7 +58,7 @@ export const ReviewsSection = () => {
     return (
         <section id="review" className="bg-secondary pt-8 pb-16 md:pt-12 md:pb-24">
             <div className="mx-auto max-w-container px-4 md:px-8">
-                <motion.div 
+                <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -72,7 +72,7 @@ export const ReviewsSection = () => {
                     </p>
                 </motion.div>
 
-                <motion.div 
+                <motion.div
                     variants={containerVariants as any}
                     initial="hidden"
                     whileInView="visible"
@@ -80,8 +80,8 @@ export const ReviewsSection = () => {
                     className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
                 >
                     {reviews.map((review, index) => (
-                        <motion.div 
-                            key={index} 
+                        <motion.div
+                            key={index}
                             variants={itemVariants as any}
                             className="flex flex-col rounded-2xl border border-secondary bg-primary p-8 shadow-sm transition-all hover:shadow-md"
                         >
@@ -117,7 +117,7 @@ export const ReviewsSection = () => {
                     ))}
                 </motion.div>
 
-                <motion.div 
+                <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 0.5 }}
