@@ -7,11 +7,11 @@ import { cx } from "@/utils/cx";
 
 interface CustomRadarChartTickProps {
     payload: { value: string };
-    x: number;
-    y: number;
+    x: string | number;
+    y: string | number;
     textAnchor: string;
     stroke: string;
-    radius: number;
+    radius?: number;
 }
 
 export const CustomRadarChartTick = ({ payload, x, y, textAnchor, stroke, radius }: CustomRadarChartTickProps) => {
@@ -38,10 +38,10 @@ export const CustomRadarChartTick = ({ payload, x, y, textAnchor, stroke, radius
             <text
                 ref={textRef}
                 x={x}
-                y={y + 5}
+                y={Number(y) + 5}
                 radius={radius}
                 stroke={stroke}
-                textAnchor={textAnchor}
+                textAnchor={textAnchor as "start" | "middle" | "end"}
                 className="recharts-text recharts-polar-angle-axis-tick-value"
             >
                 <tspan x={x} dy="0em" className="fill-utility-gray-700 text-xs font-medium">
