@@ -95,7 +95,7 @@ export const Navbar = () => {
 
             {/* Mobile Menu Overlay */}
             <div className={cx(
-                "fixed inset-x-0 h-screen bg-primary transition-all duration-300 md:hidden z-[-1]",
+                "fixed inset-x-0 h-screen bg-primary transition-all duration-300 md:hidden z-[-1] overflow-y-auto",
                 isMenuOpen ? "top-[80px] opacity-100" : "top-[-100%] opacity-0"
             )}>
                 <nav className="flex flex-col items-center justify-center gap-8 py-12">
@@ -115,10 +115,33 @@ export const Navbar = () => {
                             </Link>
                         );
                     })}
+                    <div className="flex items-center gap-4 mt-4">
+                        {/* Theme Switch */}
+                        <Button
+                            color="secondary"
+                            size="lg"
+                            iconLeading={theme === "dark" ? Sun : Moon01}
+                            className="rounded-full px-4"
+                            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                            aria-label="Toggle Theme"
+                        >
+                            {theme === "dark" ? "Light Mode" : "Dark Mode"}
+                        </Button>
+                        {/* Language Switch */}
+                        <Button
+                            color="secondary"
+                            size="lg"
+                            className="rounded-full font-bold px-6 uppercase text-md"
+                            onClick={() => setLanguage(language === "id" ? "en" : "id")}
+                        >
+                            {language === "id" ? "ID" : "EN"}
+                        </Button>
+                    </div>
                     <Button
-                        size="xl" className="mt-4"
+                        size="xl" 
                         href={process.env.NEXT_PUBLIC_WHATSAPP_LINK || "#"}
                         target="_blank"
+                        className="w-[80%]"
                     >
                         Hubungi WhatsApp
                     </Button>
