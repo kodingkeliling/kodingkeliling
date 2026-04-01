@@ -24,9 +24,9 @@ const containerVariants = {
 
 const itemVariants = {
     hidden: { opacity: 0, scale: 0.95, y: 30 },
-    visible: { 
-        opacity: 1, 
-        scale: 1, 
+    visible: {
+        opacity: 1,
+        scale: 1,
         y: 0,
         transition: { duration: 0.6, ease: "easeOut" }
     }
@@ -39,7 +39,7 @@ export const ProjectsSection = ({ limit }: ProjectsSectionProps) => {
     return (
         <section id="project" className="bg-primary pt-8 pb-16 md:pt-12 md:pb-24">
             <div className="mx-auto max-w-container px-4 md:px-8">
-                <motion.div 
+                <motion.div
                     initial={{ opacity: 0, x: -30 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
@@ -61,34 +61,34 @@ export const ProjectsSection = ({ limit }: ProjectsSectionProps) => {
                     )}
                 </motion.div>
 
-                <motion.div 
+                <motion.div
                     variants={containerVariants as any}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, margin: "-100px" }}
-                    className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
+                    className="grid gap-8 sm:grid-cols-2 md:grid-cols-3"
                 >
                     {displayProjects.map((project, index) => (
-                        <motion.div 
-                            key={index} 
+                        <motion.div
+                            key={index}
                             variants={itemVariants as any}
                             className="group relative flex flex-col overflow-hidden rounded-2xl border border-secondary shadow-sm transition-all hover:shadow-lg"
                         >
                             <div className="relative h-64 w-full overflow-hidden">
-                                <Image 
+                                <Image
                                     src={project.image}
                                     alt={project.title}
                                     fill
                                     className="object-cover transition-transform duration-300 group-hover:scale-110"
                                     onError={(e) => {
-                                         e.currentTarget.src = "/favicon.png";
+                                        e.currentTarget.src = "/favicon.png";
                                     }}
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col justify-end p-6">
-                                     <Button 
-                                        color="primary" 
-                                        size="md" 
-                                        href={project.link} 
+                                    <Button
+                                        color="primary"
+                                        size="md"
+                                        href={project.link}
                                         target="_blank"
                                         iconLeading={LinkExternal01}
                                         className="w-full"
@@ -104,7 +104,7 @@ export const ProjectsSection = ({ limit }: ProjectsSectionProps) => {
                                     </Badge>
                                 </div>
                                 <h3 className="text-xl font-bold text-primary group-hover:text-brand transition-colors">{project.title}</h3>
-                                
+
                                 <p className="text-sm text-tertiary line-clamp-2">
                                     {project.description}
                                 </p>
@@ -115,7 +115,7 @@ export const ProjectsSection = ({ limit }: ProjectsSectionProps) => {
                                     ))}
                                     <span className="text-xs font-bold text-secondary ml-1">{project.rating}</span>
                                 </div>
-                                
+
                                 <div className="flex flex-wrap gap-2 pt-2">
                                     {project.tech.map((t) => (
                                         <Badge key={t} color="gray" size="sm" type="pill-color" className="text-[10px]">
