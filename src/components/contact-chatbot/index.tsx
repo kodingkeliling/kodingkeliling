@@ -200,7 +200,7 @@ export const ContactChatBot = () => {
     return (
         <div className="flex flex-1 h-full w-full flex-col overflow-hidden bg-[#e5ddd5] shadow-2xl text-gray-900">
             {/* Header */}
-            <div className="flex items-center justify-between bg-[#075e54] py-5 px-2 md:px-5 text-white">
+            <div className="flex items-center justify-between bg-[#075e54] py-5 px-3 md:px-5 text-white">
                 <div className="flex items-center gap-4">
                     <div className="rounded-full bg-white p-1 flex items-center justify-center size-10 sm:size-12 overflow-hidden shadow-sm flex-shrink-0">
                         <img
@@ -211,7 +211,7 @@ export const ContactChatBot = () => {
                         />
                     </div>
                     <div className="min-w-0">
-                        <h3 className="text-sm xs:text-lg font-bold truncate">Koding Keliling AI Support</h3>
+                        <h3 className="text-md xs:text-lg font-bold truncate">Koding Keliling AI</h3>
                         <div className="flex items-center gap-1.5">
                             <span className="size-2 rounded-full bg-success-500 animate-pulse" />
                             <p className="text-xs text-white/80">Online</p>
@@ -237,7 +237,7 @@ export const ContactChatBot = () => {
             {/* Chat Area */}
             <div
                 ref={scrollRef}
-                className="relative flex-1 overflow-y-auto p-6 space-y-4 bg-[#efe7de]"
+                className="relative flex-1 overflow-y-auto p-4 md:p-6 space-y-4 bg-[#efe7de]"
             >
                 <div className="absolute inset-0 opacity-[0.05] pointer-events-none" style={{ backgroundImage: "radial-gradient(#000 0.5px, transparent 0.5px)", backgroundSize: "16px 16px" }} />
 
@@ -298,7 +298,7 @@ export const ContactChatBot = () => {
             </div>
 
             {/* Input Area */}
-            <div className="bg-[#f0f2f5] py-4 px-2 md:px-4 pb-8 flex items-center gap-4">
+            <div className="bg-[#f0f2f5] py-4 px-3 md:px-4 pb-8 flex items-center gap-4">
                 <div className="flex-1 relative">
                     <input
                         type="text"
