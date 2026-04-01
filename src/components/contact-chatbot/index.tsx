@@ -16,7 +16,7 @@ interface Message {
     timestamp: string;
 }
 
-const STORAGE_KEY = "kodingkeliling_chat_history";
+const STORAGE_KEY = "kodingkeliling_chat_history_v2";
 const CONVERSATION_KEY = "kodingkeliling_conversation_id";
 const USER_ID_KEY = "kodingkeliling_user_id";
 
@@ -55,8 +55,8 @@ export const ContactChatBot = () => {
         {
             id: "init-1",
             text: lang === "id"
-                ? "Saya asisten digital Anda. Ada yang bisa kami bantu mengenai pembuatan **website**, **software kustom**, atau **aplikasi mobile**?"
-                : "I'm your digital assistant. How can we help you today with **website development**, **custom software**, or **mobile apps**?",
+                ? `Saya asisten digital Anda. Ada yang bisa kami bantu mengenai pembuatan **website**, **software kustom**, atau **aplikasi mobile**?\n\natau Anda ingin menghubungi langsung admin kami bisa klik link [di sini](${process.env.NEXT_PUBLIC_WHATSAPP_LINK || "#"})`
+                : `I'm your digital assistant. How can we help you today with **website development**, **custom software**, or **mobile apps**?\n\nor if you'd like to contact our admin directly, click [here](${process.env.NEXT_PUBLIC_WHATSAPP_LINK || "#"})`,
             sender: "bot",
             timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
         }
@@ -202,7 +202,7 @@ export const ContactChatBot = () => {
             {/* Header */}
             <div className="flex items-center justify-between bg-[#075e54] p-5 text-white">
                 <div className="flex items-center gap-4">
-                    <div className="rounded-full bg-white p-1.5 flex items-center justify-center size-12 overflow-hidden shadow-sm">
+                    <div className="rounded-full bg-white p-1 flex items-center justify-center size-10 sm:size-12 overflow-hidden shadow-sm flex-shrink-0">
                         <img
                             src="/images/logo-dark.png"
                             alt="Koding Keliling Logo"
@@ -210,8 +210,8 @@ export const ContactChatBot = () => {
                             onError={(e) => { e.currentTarget.src = "/favicon.png"; }}
                         />
                     </div>
-                    <div>
-                        <h3 className="text-lg font-bold">Koding Keliling AI Support</h3>
+                    <div className="w-40 md:min-w-0 md:w-full">
+                        <h3 className="text-sm sm:text-lg font-bold truncate">Koding Keliling AI Support</h3>
                         <div className="flex items-center gap-1.5">
                             <span className="size-2 rounded-full bg-success-500 animate-pulse" />
                             <p className="text-xs text-white/80">Online</p>
@@ -222,7 +222,7 @@ export const ContactChatBot = () => {
                     <a
                         href={process.env.NEXT_PUBLIC_WHATSAPP_LINK || "#"}
                         target="_blank"
-                        className="p-2 bg-success-500 rounded-full hover:bg-success-600 transition-colors shadow-sm"
+                        className="p-2 hidden md:block bg-success-500 rounded-full hover:bg-success-600 transition-colors shadow-sm"
                         title="Open WhatsApp"
                     >
                         <Image src="/images/whatsapp.png" alt="WhatsApp" width={24} height={24} className="size-6 brightness-0 invert" />
@@ -259,10 +259,19 @@ export const ContactChatBot = () => {
                         >
                             {msg.text ? (
                                 <div className={cx(
-                                    "prose prose-sm max-w-none prose-p:my-0 prose-headings:my-1 prose-ul:my-1 prose-li:my-0 text-inherit",
-                                    msg.sender === "user" ? "prose-strong:text-brand" : "prose-strong:text-brand"
+                                    "prose prose-sm max-w-none prose-p:my-0 prose-headings:my-1 prose-ul:my-1 prose-li:my-0 pb-1.5 break-words",
+                                    "text-gray-800 prose-p:!text-gray-800 prose-strong:!text-gray-900 prose-headings:!text-gray-900 prose-li:!text-gray-800",
+                                    "prose-a:!text-blue-600 hover:prose-a:!text-blue-700 prose-a:font-bold prose-a:underline"
                                 )}>
-                                    <ReactMarkdown>{msg.text}</ReactMarkdown>
+                                    <ReactMarkdown
+                                        components={{
+                                            a: ({ node, ...props }) => (
+                                                <a target="_blank" rel="noopener noreferrer" {...props} />
+                                            ),
+                                        }}
+                                    >
+                                        {msg.text}
+                                    </ReactMarkdown>
                                 </div>
                             ) : (
                                 <div className="flex gap-1 py-1 px-2">
@@ -299,7 +308,7 @@ export const ContactChatBot = () => {
                         placeholder={language === "id" ? "Ketik pesan..." : "Type a message..."}
                         className="w-full rounded-2xl border-none bg-white px-5 py-3.5 outline-none focus:ring-2 focus:ring-brand shadow-sm pr-12 ring-inset text-gray-900"
                     />
-                    <div className="absolute right-3 top-1/2 -translate-y-4">
+                    <div className="absolute right-3 top-4 bottom-0">
                         <Button
                             color="link-color"
                             size="md"
