@@ -5,8 +5,8 @@ import { useLanguage } from "@/context/LanguageContext";
 
 export const PromoMarquee = () => {
     const { language } = useLanguage();
-    
-    const promoText = language === "id" 
+
+    const promoText = language === "id"
         ? "🚀 DISKON 10% UNTUK PROJECT PERTAMA ANDA! • 📞 KONSULTASI GRATIS SEKARANG • 🌐 KODINGKELILING: SOLUSI DIGITAL PROFESIONAL TERPERCAYA • 💸 BEBAS BIAYA ADMIN UNTUK UMKM • ✨ "
         : "🚀 10% DISCOUNT FOR YOUR FIRST PROJECT! • 📞 FREE CONSULTATION NOW • 🌐 KODINGKELILING: TRUSTED PROFESSIONAL DIGITAL SOLUTIONS • 💸 NO ADMIN FEE FOR SMALL BUSINESSES • ✨ ";
 
@@ -31,7 +31,7 @@ export const PromoMarquee = () => {
                     100% { transform: translateX(-50%); }
                 }
                 .animate-marquee-slow {
-                    animation: marquee-slow 150s linear infinite;
+                    animation: marquee-slow 200s linear infinite;
                     width: max-content;
                 }
             `}</style>
