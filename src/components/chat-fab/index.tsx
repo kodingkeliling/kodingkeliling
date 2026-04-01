@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { MessageCircle01, Zap, XClose } from "@untitledui/icons";
+import { MessageCircle01, Zap, XClose, Star06 } from "@untitledui/icons";
 import { cx } from "@/utils/cx";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
@@ -32,7 +32,7 @@ export const ChatFab = () => {
                         className="flex items-center gap-4 px-5 py-4 transition-all hover:bg-gray-50 dark:hover:bg-gray-700/50 border-b border-secondary"
                     >
                         <div className="flex size-10 items-center justify-center rounded-xl bg-brand-50 dark:bg-brand-solid/10">
-                            <Zap className="size-5 text-brand" />
+                            <Star06 className="size-5 text-utility-brand-700" />
                         </div>
                         <span className="text-md font-bold text-primary dark:text-white">{t.ai}</span>
                     </Link>

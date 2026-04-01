@@ -308,7 +308,7 @@ export const ContactChatBot = () => {
                         placeholder={language === "id" ? "Ketik pesan..." : "Type a message..."}
                         className="w-full rounded-2xl border-none bg-white px-5 py-3.5 outline-none focus:ring-2 focus:ring-brand shadow-sm pr-12 ring-inset text-gray-900"
                     />
-                    <div className="absolute right-3 top-4 bottom-0">
+                    <div className="absolute right-4 top-4 bottom-0">
                         <Button
                             color="link-color"
                             size="md"
