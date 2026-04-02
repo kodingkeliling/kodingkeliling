@@ -16,7 +16,7 @@ export const projects = [
         description: "Modern company profile website for the Lucky Launch event at Lucy in the Sky.",
         image: "/images/lll-app/image1.png",
         link: "https://777luckylaunchatlucy.com",
-        tech: ["React", "Motion", "Vite"],
+        tech: ["Typescript", "Next.js", "TailwindCSS", "Spreadsheet"],
         rating: 5
     },
     {
@@ -26,7 +26,7 @@ export const projects = [
         description: "Volunteer information portal and digital registration for members.",
         image: "/images/ksr-app/image1.png",
         link: "https://ksruniversitaspasundan.com",
-        tech: ["Next.js", "Firebase", "Tailwind"],
+        tech: ["Typescript", "Next.js", "TailwindCSS", "Tally.so", "Spreadsheet"],
         rating: 4.8
     },
     {
@@ -36,7 +36,7 @@ export const projects = [
         description: "Organization Profile Website for LISMA UNPAS.",
         image: "/images/lisma-app/image1.png",
         link: "https://lisma-unpas.com",
-        tech: ["Vue.js", "Laravel", "PostgreSQL"],
+        tech: ["Typescript", "Next.js", "TailwindCSS", "Tally.so", "Spreadsheet"],
         rating: 4.9
     },
     {
@@ -46,7 +46,7 @@ export const projects = [
         description: "Trusted self-donation platform for ITB students prioritizing transparency.",
         image: "/images/iom/image1.png",
         link: "https://www.iom-itb.id",
-        tech: ["PHP", "MySQL", "JavaScript"],
+        tech: ["HTML", "CSS", "JavaScript", "Vue.js", "TailwindCSS", "Express.js", "Tally.so"],
         rating: 5
     },
     {
@@ -56,7 +56,7 @@ export const projects = [
         description: "Flexible and interactive personal portfolio website.",
         image: "/images/jamjam/image1.png",
         link: "https://muhjam.github.io/jamjam.com",
-        tech: ["Astro", "Tailwind", "Motion"],
+        tech: ["HTML", "CSS", "JavaScript"],
         rating: 5
     },
     {
@@ -66,7 +66,7 @@ export const projects = [
         description: "Interactive greeting website with smooth animations.",
         image: "/images/valentine-chalida/image2.png",
         link: "https://kodingkeliling.github.io/valentine",
-        tech: ["HTML5", "CSS3", "GSAP"],
+        tech: ["HTML", "CSS", "JavaScript"],
         rating: 5
     },
     {
@@ -76,7 +76,7 @@ export const projects = [
         description: "Digital representation website for Karavista real estate agent.",
         image: "/images/karavista/image3.png",
         link: "https://karavista.co.id",
-        tech: ["Wordpress", "Elementor"],
+        tech: ["HTML", "CSS", "JavaScript", "Vue.js", "TailwindCSS", "Tally.so"],
         rating: 5
     },
     {
@@ -86,7 +86,7 @@ export const projects = [
         description: "PSS LISMA UNPAS Art Study Center portal for contemporary research.",
         image: "/images/pss-lisma/image2.png",
         link: "https://www.psslismaunpasbdg.com/",
-        tech: ["React", "Material UI", "Node.js"],
+        tech: ["HTML", "CSS", "JavaScript", "Vue.js", "TailwindCSS", "Tally.so"],
         rating: 4.8
     }
 ];

@@ -6,7 +6,7 @@ export const projects = [
         description: "Platform pendaftaran dan pusat informasi event seni akbar 'LISMA ART PARADE 2.0'.",
         image: "/images/lap-2-0/image1.png",
         link: "https://lap.2.0.lisma-unpas.com",
-        tech: ["Next.js", "Motion", "Tailwind"],
+        tech: ["Next.js", "Supabase", "Tailwind"],
         rating: 5
     },
     {
@@ -16,7 +16,7 @@ export const projects = [
         description: "Website company profile modern untuk event Lucky Launch di Lucy in the Sky.",
         image: "/images/lll-app/image1.png",
         link: "https://777luckylaunchatlucy.com",
-        tech: ["React", "Motion", "Vite"],
+        tech: ["Typescript", "Next.js", "TailwindCSS", "Spreadsheet"],
         rating: 5
     },
     {
@@ -26,7 +26,7 @@ export const projects = [
         description: "Portal informasi relawan dan pendaftaran anggota baru secara digital.",
         image: "/images/ksr-app/image1.png",
         link: "https://ksruniversitaspasundan.com",
-        tech: ["Next.js", "Firebase", "Tailwind"],
+        tech: ["Typescript", "Next.js", "TailwindCSS", "Tally.so", "Spreadsheet"],
         rating: 4.8
     },
     {
@@ -36,7 +36,7 @@ export const projects = [
         description: "Website Profil Organisasi LISMA UNPAS.",
         image: "/images/lisma-app/image1.png",
         link: "https://lisma-unpas.com",
-        tech: ["Vue.js", "Laravel", "PostgreSQL"],
+        tech: ["Typescript", "Next.js", "TailwindCSS", "Tally.so", "Spreadsheet"],
         rating: 4.9
     },
     {
@@ -46,17 +46,17 @@ export const projects = [
         description: "Platform donasi mandiri terpercaya mahasiswa ITB yang mengedepankan transparansi.",
         image: "/images/iom/image1.png",
         link: "https://www.iom-itb.id",
-        tech: ["PHP", "MySQL", "JavaScript"],
+        tech: ["HTML", "CSS", "JavaScript", "Vue.js", "TailwindCSS", "Express.js", "Tally.so"],
         rating: 5
     },
     {
         id: "5",
         title: "Jamjam Portofolio",
         category: "Portofolio",
-        description: "Website portofolio pribadi yang fleksibel dan interaktif.",
+        description: "Website portofolio pribadi yang fleksibel and interaktif.",
         image: "/images/jamjam/image1.png",
         link: "https://muhjam.github.io/jamjam.com",
-        tech: ["Astro", "Tailwind", "Motion"],
+        tech: ["HTML", "CSS", "JavaScript"],
         rating: 5
     },
     {
@@ -66,7 +66,7 @@ export const projects = [
         description: "Website ucapan selamat (greetings) dengan animasi yang lembut.",
         image: "/images/valentine-chalida/image2.png",
         link: "https://kodingkeliling.github.io/valentine",
-        tech: ["HTML5", "CSS3", "GSAP"],
+        tech: ["HTML", "CSS", "JavaScript"],
         rating: 5
     },
     {
@@ -76,7 +76,7 @@ export const projects = [
         description: "Website representasi digital untuk agen properti Karavista.",
         image: "/images/karavista/image3.png",
         link: "https://karavista.co.id",
-        tech: ["Wordpress", "Elementor"],
+        tech: ["HTML", "CSS", "JavaScript", "Vue.js", "TailwindCSS", "Tally.so"],
         rating: 5
     },
     {
@@ -86,7 +86,7 @@ export const projects = [
         description: "Portal Pusat Studi Seni LISMA UNPAS untuk riset seni kontemporer.",
         image: "/images/pss-lisma/image2.png",
         link: "https://www.psslismaunpasbdg.com/",
-        tech: ["React", "Material UI", "Node.js"],
+        tech: ["HTML", "CSS", "JavaScript", "Vue.js", "TailwindCSS", "Tally.so"],
         rating: 4.8
     }
 ];
