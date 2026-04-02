@@ -6,7 +6,7 @@ export const projects = [
         description: "Official registration platform for the grand art competition 'LISMA ART PARADE 2.0'.",
         image: "/images/lap-2-0/image1.png",
         link: "https://lap.2.0.lisma-unpas.com",
-        tech: ["Next.js", "Motion", "Tailwind"],
+        tech: ["Next.js", "Supabase", "Tailwind"],
         rating: 5
     },
     {
