@@ -8,6 +8,7 @@ import { FeaturedIcon } from "@/components/foundations/featured-icon/featured-ic
 import { useLanguage } from "@/context/LanguageContext";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { BadgeWithDot } from "@/components/base/badges/badges";
+import { config } from "@/utils/config";
 
 const iconsMap: Record<string, any> = {
     Monitor01,
@@ -73,11 +74,12 @@ export default function ServiceDetailPage() {
                         </div>
                         <Button
                             size="xl"
-                            href={process.env.NEXT_PUBLIC_WHATSAPP_LINK}
+                            color="primary"
+                            href={config.public.whatsappLink}
                             target="_blank"
                             className="w-full sm:w-auto font-bold"
                         >
-                            Konsultasi Sekarang
+                            {t.common.consultNow}
                         </Button>
                     </div>
                 </div>

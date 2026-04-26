@@ -6,6 +6,7 @@ import { cx } from "@/utils/cx";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import Image from "next/image";
+import { config } from "@/utils/config";
 
 export const ChatFab = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -37,7 +38,7 @@ export const ChatFab = () => {
                         <span className="text-md font-bold text-primary dark:text-white">{t.ai}</span>
                     </Link>
                     <a
-                        href={process.env.NEXT_PUBLIC_WHATSAPP_LINK || "#"}
+                        href={config.public.whatsappLink}
                         target="_blank"
                         className="flex items-center gap-4 px-5 py-4 transition-all hover:bg-gray-50 dark:hover:bg-gray-700/50"
                     >

@@ -7,6 +7,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import Image from "next/image";
 import { motion } from "motion/react";
 import { BadgeWithDot } from "@/components/base/badges/badges";
+import { config } from "@/utils/config";
 
 const fadeInUp = {
     initial: { opacity: 0, y: 20 },
@@ -63,7 +64,7 @@ export const Hero = () => {
                             <Button
                                 size="xl"
                                 className="w-full sm:w-auto font-bold"
-                                href={process.env.NEXT_PUBLIC_WHATSAPP_LINK || "#"}
+                                href={config.public.whatsappLink}
                                 target="_blank"
                                 iconTrailing={ArrowNarrowRight}
                             >
@@ -98,6 +99,16 @@ export const Hero = () => {
                                     ✓
                                 </span>
                                 {hero.fullOwnership} 🚀
+                            </motion.div>
+
+                            <motion.div
+                                variants={fadeInUp}
+                                className="flex items-center gap-2 text-sm font-semibold text-blue-700"
+                            >
+                                <span className="inline-flex size-5 items-center justify-center rounded-full bg-blue-50 text-blue-700">
+                                    ✓
+                                </span>
+                                {hero.worldwideService} 🌍
                             </motion.div>
                         </div>
                     </motion.div>

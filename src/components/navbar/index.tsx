@@ -9,7 +9,8 @@ import { Moon01, Sun, XClose, Menu01 } from "@untitledui/icons";
 import { cx } from "@/utils/cx";
 import { useTheme } from "next-themes";
 import { useLanguage } from "@/context/LanguageContext";
-import { locales } from "@/locales";
+import { config } from "@/utils/config";
+import { LanguageSelector } from "./language-selector";
 
 const navItems = [
     { key: "layanan", href: "/services" },
@@ -21,16 +22,13 @@ const navItems = [
 export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const pathname = usePathname();
-    const { language, setLanguage, t } = useLanguage();
+    const { t } = useLanguage();
     const { theme, setTheme } = useTheme();
 
-    const navLabels: Record<string, any> = {
-        id: { layanan: "Layanan", project: "Project", review: "Review", kontak: "Kontak" },
-        en: { layanan: "Services", project: "Projects", review: "Reviews", kontak: "Contact" }
-    };
+    const navigation = t.navigation;
 
     return (
-        <header className="sticky top-0 z-50 bg-primary/80">
+        <header className="sticky top-0 z-50 bg-primary/80 backdrop-blur-md border-b border-secondary">
             <div className="mx-auto flex h-20 max-w-container items-center justify-between px-4 md:px-8">
                 <Link href="/" className="flex items-center">
                     <Logo />
@@ -41,7 +39,7 @@ export const Navbar = () => {
                     <ul className="flex items-center gap-10 lg:gap-14">
                         {navItems.map((item) => {
                             const isActive = pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href));
-                            const label = navLabels[language][item.key];
+                            const label = (navigation as any)[item.key];
                             return (
                                 <li key={item.key} className="relative py-7">
                                     <Link
@@ -72,15 +70,7 @@ export const Navbar = () => {
                         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                         aria-label="Toggle Theme"
                     />
-                    {/* Language Switch */}
-                    <Button
-                        color="secondary"
-                        size="md"
-                        className="rounded-full font-bold px-3 uppercase text-sm"
-                        onClick={() => setLanguage(language === "id" ? "en" : "id")}
-                    >
-                        {language}
-                    </Button>
+                    <LanguageSelector />
                 </div>
 
                 {/* Mobile Menu Trigger */}
@@ -111,7 +101,7 @@ export const Navbar = () => {
                                 )}
                                 onClick={() => setIsMenuOpen(false)}
                             >
-                                {navLabels[language][item.key]}
+                                {(navigation as any)[item.key]}
                             </Link>
                         );
                     })}
@@ -127,19 +117,11 @@ export const Navbar = () => {
                         >
                             {theme === "dark" ? "Light Mode" : "Dark Mode"}
                         </Button>
-                        {/* Language Switch */}
-                        <Button
-                            color="secondary"
-                            size="lg"
-                            className="rounded-full font-bold px-6 uppercase text-md"
-                            onClick={() => setLanguage(language === "id" ? "en" : "id")}
-                        >
-                            {language === "id" ? "ID" : "EN"}
-                        </Button>
                     </div>
+                    <LanguageSelector mobile />
                     <Button
                         size="xl" 
-                        href={process.env.NEXT_PUBLIC_WHATSAPP_LINK || "#"}
+                        href={config.public.whatsappLink}
                         target="_blank"
                         className="w-[80%]"
                     >

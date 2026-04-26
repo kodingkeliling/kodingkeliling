@@ -56,7 +56,7 @@ export const ProjectsSection = ({ limit }: ProjectsSectionProps) => {
                     </div>
                     {limit && (
                         <Button color="secondary" size="lg" href="/projects">
-                            See All Projects
+                            {t.common.seeAllProjects}
                         </Button>
                     )}
                 </motion.div>

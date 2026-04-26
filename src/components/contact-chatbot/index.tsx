@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import { Send01, CheckDone01, XClose } from "@untitledui/icons";
 import { Button } from "@/components/base/buttons/button";
 import { cx } from "@/utils/cx";
@@ -8,6 +8,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import Link from "next/link";
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
+import { config } from "@/utils/config";
 
 interface Message {
     id: string;
@@ -16,18 +17,37 @@ interface Message {
     timestamp: string;
 }
 
-const STORAGE_KEY = "kodingkeliling_chat_history_v2";
+const STORAGE_KEY = "kodingkeliling_chat_history_v3";
 const CONVERSATION_KEY = "kodingkeliling_conversation_id";
 const USER_ID_KEY = "kodingkeliling_user_id";
 
 export const ContactChatBot = () => {
-    const { language } = useLanguage();
+    const { t } = useLanguage();
     const [messages, setMessages] = useState<Message[]>([]);
     const [inputValue, setInputValue] = useState("");
     const [isTyping, setIsTyping] = useState(false);
     const [conversationId, setConversationId] = useState<string | null>(null);
     const [userId, setUserId] = useState<string>("");
     const scrollRef = useRef<HTMLDivElement>(null);
+
+    // Initial Messages (Computed in real-time)
+    const initialMessages = useMemo((): Message[] => [
+        {
+            id: "init-0",
+            text: t.chat.welcome,
+            sender: "bot",
+            timestamp: "09:00"
+        },
+        {
+            id: "init-1",
+            text: `${t.chat.assistantDesc}\n\n${t.chat.directContact.replace("{link}", config.public.whatsappLink)}`,
+            sender: "bot",
+            timestamp: "09:01"
+        }
+    ], [t]);
+
+    // Combined messages for rendering
+    const allMessages = useMemo(() => [...initialMessages, ...messages], [initialMessages, messages]);
 
     // Initialize User and Conversation
     useEffect(() => {
@@ -42,46 +62,22 @@ export const ContactChatBot = () => {
         if (storedConvId) {
             setConversationId(storedConvId);
         }
-    }, []);
 
-    // Initial Messages
-    const getInitialMessages = (lang: string): Message[] => [
-        {
-            id: "init-0",
-            text: lang === "id" ? "Halo! 👋 Selamat datang di **Koding Keliling**." : "Hello! 👋 Welcome to **Koding Keliling**.",
-            sender: "bot",
-            timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
-        },
-        {
-            id: "init-1",
-            text: lang === "id"
-                ? `Saya asisten digital Anda. Ada yang bisa kami bantu mengenai pembuatan **website**, **software kustom**, atau **aplikasi mobile**?\n\natau Anda ingin menghubungi langsung admin kami bisa klik link [di sini](${process.env.NEXT_PUBLIC_WHATSAPP_LINK || "#"})`
-                : `I'm your digital assistant. How can we help you today with **website development**, **custom software**, or **mobile apps**?\n\nor if you'd like to contact our admin directly, click [here](${process.env.NEXT_PUBLIC_WHATSAPP_LINK || "#"})`,
-            sender: "bot",
-            timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
-        }
-    ];
-
-    // Load Chat History
-    useEffect(() => {
+        // Load History (only user/bot dialogue, no initial messages)
         const savedChat = localStorage.getItem(STORAGE_KEY);
         if (savedChat) {
             try {
                 const parsed = JSON.parse(savedChat);
-                if (Array.isArray(parsed) && parsed.length > 0) {
+                if (Array.isArray(parsed)) {
                     setMessages(parsed);
-                } else {
-                    setMessages(getInitialMessages(language));
                 }
             } catch (e) {
-                setMessages(getInitialMessages(language));
+                console.error("Failed to load chat history", e);
             }
-        } else {
-            setMessages(getInitialMessages(language));
         }
-    }, [language]);
+    }, []);
 
-    // Save Chat History
+    // Save Chat History (excluding initial messages)
     useEffect(() => {
         if (messages.length > 0) {
             localStorage.setItem(STORAGE_KEY, JSON.stringify(messages));
@@ -93,7 +89,7 @@ export const ContactChatBot = () => {
         if (scrollRef.current) {
             scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
         }
-    }, [messages, isTyping]);
+    }, [allMessages, isTyping]);
 
     const handleSend = async () => {
         if (!inputValue.trim() || isTyping) return;
@@ -134,12 +130,6 @@ export const ContactChatBot = () => {
             if (!response.ok) {
                 const errorData = await response.json();
                 throw new Error(errorData.message || "Failed to reach AI");
-            }
-
-            const contentType = response.headers.get("Content-Type");
-            if (contentType && contentType.includes("application/json")) {
-                const data = await response.json();
-                if (data.error) throw new Error(data.message);
             }
 
             const reader = response.body?.getReader();
@@ -187,9 +177,7 @@ export const ContactChatBot = () => {
                     ...m,
                     text: error.message && error.message.includes("kendala")
                         ? error.message
-                        : (language === "id"
-                            ? "Maaf, saat ini service sedang ada kendala, anda bisa langsung chat whatsapp kami."
-                            : "Sorry, the service is currently experiencing issues. You can chat with us directly via WhatsApp.")
+                        : t.chat.error
                 } : m)
             );
         } finally {
@@ -220,7 +208,7 @@ export const ContactChatBot = () => {
                 </div>
                 <div className="flex items-center gap-4">
                     <a
-                        href={process.env.NEXT_PUBLIC_WHATSAPP_LINK || "#"}
+                        href={config.public.whatsappLink}
                         target="_blank"
                         className="p-2 hidden md:block bg-success-500 rounded-full hover:bg-success-600 transition-colors shadow-sm"
                         title="Open WhatsApp"
@@ -241,7 +229,7 @@ export const ContactChatBot = () => {
             >
                 <div className="absolute inset-0 opacity-[0.05] pointer-events-none" style={{ backgroundImage: "radial-gradient(#000 0.5px, transparent 0.5px)", backgroundSize: "16px 16px" }} />
 
-                {messages.map((msg) => (
+                {allMessages.map((msg) => (
                     <div
                         key={msg.id}
                         className={cx(
@@ -305,7 +293,7 @@ export const ContactChatBot = () => {
                         value={inputValue}
                         onChange={(e) => setInputValue(e.target.value)}
                         onKeyDown={(e) => e.key === "Enter" && handleSend()}
-                        placeholder={language === "id" ? "Ketik pesan..." : "Type a message..."}
+                        placeholder={t.chat.typeMessage}
                         className="w-full rounded-2xl border-none bg-white px-5 py-3.5 outline-none focus:ring-2 focus:ring-brand shadow-sm pr-12 ring-inset text-gray-900"
                     />
                     <div className="absolute right-4 top-4 bottom-0">

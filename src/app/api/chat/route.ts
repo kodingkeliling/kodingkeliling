@@ -1,21 +1,20 @@
 import { NextResponse } from "next/server";
+import { config } from "@/utils/config";
 
 const notifyAdminOfError = async (query: string, error: any) => {
-    const adminEmail = process.env.ADMIN_EMAIL;
-    const gasUrl = process.env.GAS_WEBAPP_URL;
-    const gasToken = process.env.GAS_API_KEY;
+    const { adminEmail, gasWebappUrl, gasApiKey } = config.server;
 
-    if (!adminEmail || !gasUrl || !gasToken) {
+    if (!adminEmail || !gasWebappUrl || !gasApiKey) {
         console.warn("Skipping notification: Admin email, GAS URL, or GAS Token not configured.");
         return;
     }
 
     try {
-        await fetch(gasUrl, {
+        await fetch(gasWebappUrl, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
-                token: gasToken,
+                token: gasApiKey,
                 email: adminEmail,
                 subject: `🚨 Dify API Error - Koding Keliling`,
                 name: "Admin Koding Keliling",
@@ -34,10 +33,10 @@ export async function POST(req: Request) {
         requestData = await req.json();
         const { query, user, conversation_id } = requestData;
 
-        const response = await fetch(`${process.env.DIFY_API_URL}/chat-messages`, {
+        const response = await fetch(`${config.server.difyApiUrl}/chat-messages`, {
             method: "POST",
             headers: {
-                "Authorization": `Bearer ${process.env.DIFY_API_KEY}`,
+                "Authorization": `Bearer ${config.server.difyApiKey}`,
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
