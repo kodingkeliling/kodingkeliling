@@ -6,30 +6,6 @@ import { Star01 } from "@untitledui/icons";
 import { useLanguage } from "@/context/LanguageContext";
 import { motion } from "motion/react";
 
-const reviews = [
-    {
-        name: "Chalida Rahma Listy Hidayat",
-        role: "Mahasiswa",
-        review: "Sangat puas dengan hasil website yang dibuat oleh KodingKeliling. Desainnya sangat modern dan performanya cepat sekali. SEO-nya juga sangat membantu dalam meningkatkan brand awareness bisnis kami.",
-        rating: 5,
-        avatar: "/images/chalida.png",
-    },
-    {
-        name: "Elsa Irham",
-        role: "Pelaku UMKM",
-        review: "Aplikasi mobile yang dikembangkan benar-benar intuitif dan mudah digunakan oleh pelanggan kami. Komunikasi tim KodingKeliling sangat baik selama proses pengembangan dan hasilnya melebihi ekspektasi.",
-        rating: 5,
-        avatar: "/images/elsa.png",
-    },
-    {
-        name: "Ranca Gigih Pramudita",
-        role: "Barista Coffee Shop",
-        review: "Sistem kustom dari KodingKeliling benar-benar solusi tepat untuk efisiensi bisnis kami. Tidak ada biaya langganan bulanan yang memberatkan, tapi fiturnya lengkap dan scalable. Terima kasih!",
-        rating: 5,
-        avatar: "/images/ranca.png",
-    },
-];
-
 const trustedBrands = [
     "KSR UNPAS", "LISMA UNPAS", "IOM ITB", "UNPAS", "777 Group"
 ];
@@ -79,7 +55,7 @@ export const ReviewsSection = () => {
                     viewport={{ once: true, margin: "-100px" }}
                     className="grid gap-8 sm:grid-cols-2 md:grid-cols-3"
                 >
-                    {reviews.map((review, index) => (
+                    {t.common.reviews.map((review, index) => (
                         <motion.div
                             key={index}
                             variants={itemVariants as any}
@@ -87,11 +63,11 @@ export const ReviewsSection = () => {
                         >
                             <div className="mb-6 flex items-center gap-2">
                                 <div className="flex gap-1 text-warning-400">
-                                    {[...Array(review.rating)].map((_, i) => (
+                                    {[...Array(5)].map((_, i) => (
                                         <Star01 key={i} className="size-5 fill-current" />
                                     ))}
                                 </div>
-                                <span className="font-bold text-secondary">{review.rating}</span>
+                                <span className="font-bold text-secondary">5.0</span>
                             </div>
                             <p className="mb-8 text-lg font-medium italic text-primary">
                                 "{review.review}"

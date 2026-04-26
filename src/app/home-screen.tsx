@@ -6,13 +6,18 @@ import { ServicesSection } from "@/components/services-section";
 import { ProjectsSection } from "@/components/projects-section";
 import { ReviewsSection } from "@/components/reviews-section";
 
+import { WorldwideSection } from "@/components/worldwide-section";
+import { FAQSection } from "@/components/faq-section";
+
 export const HomeScreen = () => {
     return (
         <main className="flex-1 overflow-x-hidden">
             <Hero />
             <ServicesSection />
+            <WorldwideSection />
             <ProjectsSection limit={3} />
             <ReviewsSection />
+            <FAQSection />
         </main>
     );
 };

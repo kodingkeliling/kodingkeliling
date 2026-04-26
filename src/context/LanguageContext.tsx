@@ -16,14 +16,16 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
 
     useEffect(() => {
         const savedLang = localStorage.getItem("lang") as LanguageType;
-        if (savedLang && (savedLang === "id" || savedLang === "en")) {
+        if (savedLang && locales[savedLang]) {
             setLanguageState(savedLang);
         }
     }, []);
 
     const setLanguage = (lang: LanguageType) => {
-        setLanguageState(lang);
-        localStorage.setItem("lang", lang);
+        if (locales[lang]) {
+            setLanguageState(lang);
+            localStorage.setItem("lang", lang);
+        }
     };
 
     const t = locales[language];

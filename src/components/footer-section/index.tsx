@@ -7,10 +7,11 @@ import { Mail01 } from "@untitledui/icons";
 import { Instagram, GitHub } from "@/components/foundations/social-icons";
 import { useLanguage } from "@/context/LanguageContext";
 import { BadgeWithDot } from "@/components/base/badges/badges";
+import { config } from "@/utils/config";
 
 export const FooterSection = () => {
     const { t } = useLanguage();
-    const { footer } = t;
+    const { footer, navigation } = t;
 
     return (
         <footer id="kontak" className="bg-primary py-16 md:py-20 border-t border-secondary">
@@ -37,16 +38,16 @@ export const FooterSection = () => {
                         <div className="flex flex-col gap-4 text-center lg:text-left">
                             <h4 className="text-sm font-semibold text-tertiary">{footer.quickLinks}</h4>
                             <ul className="flex flex-col gap-3 font-semibold text-primary">
-                                <li><a href="/services" className="hover:text-brand transition-all">Layanan</a></li>
-                                <li><a href="/projects" className="hover:text-brand transition-all">Project</a></li>
-                                <li><a href="/reviews" className="hover:text-brand transition-all">Review</a></li>
-                                <li><a href={process.env.NEXT_PUBLIC_WHATSAPP_LINK || "#"} target="_blank" className="hover:text-brand transition-all">Kontak</a></li>
+                                <li><a href="/services" className="hover:text-brand transition-all">{navigation.layanan}</a></li>
+                                <li><a href="/projects" className="hover:text-brand transition-all">{navigation.project}</a></li>
+                                <li><a href="/reviews" className="hover:text-brand transition-all">{navigation.review}</a></li>
+                                <li><a href={config.public.whatsappLink} target="_blank" className="hover:text-brand transition-all">{navigation.kontak}</a></li>
                             </ul>
                         </div>
                         <div className="flex flex-col gap-4 text-center lg:text-left">
                             <h4 className="text-sm font-semibold text-tertiary">{footer.services}</h4>
                             <ul className="flex flex-col gap-3 font-semibold text-primary whitespace-nowrap">
-                                {t.services.map((s, i) => (
+                                {t.services.slice(0, 4).map((s, i) => (
                                     <li key={i}><a href={`/services/${s.slug}`} className="hover:text-brand transition-all truncate">{s.title}</a></li>
                                 ))}
                             </ul>
@@ -59,8 +60,8 @@ export const FooterSection = () => {
                         {footer.copyright}
                     </p>
                     <div className="flex gap-6 text-sm font-semibold text-tertiary">
-                        <a href="#" className="hover:text-primary transition-all">Privacy Policy</a>
-                        <a href="#" className="hover:text-primary transition-all">Terms of Service</a>
+                        <a href="#" className="hover:text-primary transition-all">{footer.privacyPolicy}</a>
+                        <a href="#" className="hover:text-primary transition-all">{footer.termsOfService}</a>
                     </div>
                 </div>
             </div>

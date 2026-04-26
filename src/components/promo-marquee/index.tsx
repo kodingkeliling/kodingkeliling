@@ -4,11 +4,8 @@ import React from "react";
 import { useLanguage } from "@/context/LanguageContext";
 
 export const PromoMarquee = () => {
-    const { language } = useLanguage();
-
-    const promoText = language === "id"
-        ? "🚀 DISKON 10% UNTUK PROJECT PERTAMA ANDA! • 📞 KONSULTASI GRATIS SEKARANG • 🌐 KODINGKELILING: SOLUSI DIGITAL PROFESIONAL TERPERCAYA • 💸 BEBAS BIAYA ADMIN UNTUK UMKM • ✨ "
-        : "🚀 10% DISCOUNT FOR YOUR FIRST PROJECT! • 📞 FREE CONSULTATION NOW • 🌐 KODINGKELILING: TRUSTED PROFESSIONAL DIGITAL SOLUTIONS • 💸 NO ADMIN FEE FOR SMALL BUSINESSES • ✨ ";
+    const { t } = useLanguage();
+    const promoText = t.common.promoText;
 
     return (
         <div className="bg-brand-solid py-2 text-white overflow-hidden relative border-y border-white/10">
