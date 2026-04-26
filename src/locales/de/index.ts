@@ -16,7 +16,7 @@ export const de = {
         title: "Realisieren Sie Ihre digitalen Ideen mit ",
         brand: "KodingKeliling",
         description: "Professionelle Website-Entwicklung, Individualsoftware und mobile Apps für Kunden weltweit. Speziell entwickelt, um Ihren Geschäftswert digital zu steigern.",
-        ctaConsultation: "Jetzt beraten lassen",
+        ctaConsultation: "Beraten",
         ctaServices: "Dienste ansehen",
         freeConsultation: "Kostenlose Beratung 0 Rp",
         fullOwnership: "100% Code-Eigentum",
@@ -45,22 +45,22 @@ export const de = {
         whatClientsSayDesc: "Das Vertrauen unserer Kunden hat für uns oberste Priorität. Hier sind Testimonials von mehreren Kunden, die mit uns zusammengearbeitet haben.",
         trustedBy: "Vertraut von Unternehmen & Organisationen",
         home: "Startseite",
-        consultNow: "Jetzt beraten lassen",
+        consultNow: "Beraten",
         worldwideContent: "Globaler digitaler Partner",
-        worldwideContentDesc: "Wir bieten digitale Lösungen, die weltweit funktionieren und alle Sprachen und kulturellen Kontexte unterstützen.",
+        worldwideContentDesc: "Wir bieten digitale Lösungen, die weltweit funktionieren and alle Sprachen and kulturellen Kontexte unterstützen.",
         globalDigitalPartner: "Globaler digitaler Partner",
         promoText: "🚀 10% RABATT AUF IHR ERSTES PROJEKT! • 📞 KOSTENLOSE BERATUNG JETZT • 🌐 KODINGKELILING: PROFESSIONELLE DIGITALE LÖSUNGEN • 💸 KEINE GEBÜHREN FÜR KMU • ✨ ",
         reviews: [
             {
                 name: "Chalida Rahma Listy Hidayat",
                 role: "Studentin",
-                review: "Sehr zufrieden mit den von KodingKeliling erstellten Website-Ergebnissen. Das Design ist sehr modern und die Leistung ist super schnell.",
+                review: "Sehr zufrieden mit den von KodingKeliling erstellten Website-Ergebnissen. Das Design ist sehr modern and die Leistung ist super schnell.",
                 avatar: "/images/chalida.png"
             },
             {
                 name: "Elsa Irham",
                 role: "KMU-Besitzerin",
-                review: "Die entwickelte mobile Anwendung ist wirklich intuitiv und für unsere Kunden einfach zu bedienen.",
+                review: "Die entwickelte mobile Anwendung ist wirklich intuitiv and für unsere Kunden einfach zu bedienen.",
                 avatar: "/images/elsa.png"
             },
             {
@@ -80,25 +80,25 @@ export const de = {
     },
     worldwide: {
         ctaTitle: "Bereit, Ihr Geschäft weltweit auszubauen?",
-        ctaDesc: "Wir helfen lokalen Marken mit modernster Technologie und umfassender mehrsprachiger Unterstützung, global zu werden.",
+        ctaDesc: "Wir helfen lokalen Marken mit modernster Technologie and umfassender mehrsprachiger Unterstützung, global zu werden.",
         features: [
             {
                 title: "Unterstützung aller Sprachen",
-                desc: "Wir bauen Systeme, die von Grund auf mehrere Sprachen unterstützen, einschließlich RTL und Sonderzeichen."
+                desc: "Wir bauen Systeme, die von Grund auf mehrere Sprachen unterstützen, einschließlich RTL and Sonderzeichen."
             },
             {
                 title: "Schneller globaler Zugriff",
-                desc: "CDN-Optimierung und Cloud-Infrastruktur, um sicherzustellen, dass Ihre Website von jedem Land aus schnell erreichbar ist."
+                desc: "CDN-Optimierung and Cloud-Infrastruktur, um sicherzustellen, dass Ihre Website von jedem Land aus schnell erreichbar ist."
             },
             {
                 title: "Internationale Konformität",
-                desc: "Sicherstellung, dass Ihre Website die DSGVO, CCPA und andere globale Datenschutzstandards erfüllt."
+                desc: "Sicherstellung, dass Ihre Website die DSGVO, CCPA and andere globale Datenschutzstandards erfüllt."
             }
         ]
     },
     faq: {
         title: "Häufig gestellte Fragen",
-        description: "Alles, was Sie über unsere Dienste und Prozesse wissen müssen.",
+        description: "Alles, was Sie über unsere Dienste and Prozesse wissen müssen.",
         stillHaveQuestions: "Haben Sie noch Fragen?",
         footerContactDesc: "Wir sind hier, um zu helfen. Kontaktieren Sie uns über WhatsApp für eine kostenlose Beratung.",
         items: [

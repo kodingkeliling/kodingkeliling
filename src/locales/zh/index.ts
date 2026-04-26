@@ -15,7 +15,7 @@ export const zh = {
         title: "与我们一起实现您的数字创意 ",
         brand: "KodingKeliling",
         description: "为全球客户提供专业的网站开发、定制软件和移动应用。专为通过数字化提升您的业务价值而设计。",
-        ctaConsultation: "现在咨询",
+        ctaConsultation: "咨询",
         ctaServices: "查看服务",
         freeConsultation: "免费咨询 0 Rp",
         fullOwnership: "100% 代码所有权",
@@ -44,7 +44,7 @@ export const zh = {
         whatClientsSayDesc: "客户的信任是我们的重中之重。以下是几位与我们合作过的客户的证言。",
         trustedBy: "受公司和组织信任",
         home: "首页",
-        consultNow: "现在咨询",
+        consultNow: "咨询",
         worldwideContent: "全球数字合作伙伴",
         worldwideContentDesc: "我们提供在全球范围内运行的数字解决方案，支持所有语言和文化背景。",
         globalDigitalPartner: "全球数字合作伙伴",
@@ -59,7 +59,7 @@ export const zh = {
             {
                 name: "Elsa Irham",
                 role: "中小企业主",
-                review: "开发的移动应用程序确实非常直观，且方便我们的客户使用。",
+                review: "开发的移动应用程序确实非常直観，且方便我们的客户使用。",
                 avatar: "/images/elsa.png"
             },
             {

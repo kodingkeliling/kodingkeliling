@@ -15,7 +15,7 @@ export const fr = {
         title: "Réalisez vos Idées Numériques avec ",
         brand: "KodingKeliling",
         description: "Développement professionnel de sites Web, de logiciels sur mesure et d'applications mobiles pour des clients du monde entier. Conçu pour augmenter numériquement la valeur de votre entreprise.",
-        ctaConsultation: "Consulter Maintenant",
+        ctaConsultation: "Consulter",
         ctaServices: "Voir Services",
         freeConsultation: "Consultation Gratuite 0 Rp",
         fullOwnership: "100% Propriété du Code",
@@ -44,22 +44,22 @@ export const fr = {
         whatClientsSayDesc: "La confiance des clients est notre priorité absolue. Voici des témoignages de plusieurs clients qui ont travaillé avec nous.",
         trustedBy: "Approuvé par des Entreprises & Organisations",
         home: "Accueil",
-        consultNow: "Consulter Maintenant",
+        consultNow: "Consulter",
         worldwideContent: "Partenaire Numérique Mondial",
-        worldwideContentDesc: "Nous fournissons des solutions numériques qui fonctionnent dans le monde entier, prenant en charge toutes les langues et tous les contextes culturels.",
+        worldwideContentDesc: "Nous fournissons des solutions numériques qui fonctionnent dans le monde entier, prenant en charge toutes les langues and tous les contextes culturels.",
         globalDigitalPartner: "Partenaire Numérique Mondial",
         promoText: "🚀 10% DE RÉDUCTION SUR VOTRE PREMIER PROJET ! • 📞 CONSULTATION GRATUITE MAINTENANT • 🌐 KODINGKELILING: SOLUTIONS NUMÉRIQUES PROFESSIONNELLES • 💸 AUCUN FRAIS POUR LES PME • ✨ ",
         reviews: [
             {
                 name: "Chalida Rahma Listy Hidayat",
                 role: "Étudiante",
-                review: "Très satisfaite des résultats du site Web créé par KodingKeliling. Le design est très moderne et les performances sont ultra-rapides.",
+                review: "Très satisfaite des résultats du site Web créé par KodingKeliling. Le design est très moderne and les performances sont ultra-rapides.",
                 avatar: "/images/chalida.png"
             },
             {
                 name: "Elsa Irham",
                 role: "Propriétaire de PME",
-                review: "L'application mobile développée est vraiment intuitive et facile à utiliser pour nos clients.",
+                review: "L'application mobile développée est vraiment intuitive and facile à utiliser pour nos clients.",
                 avatar: "/images/elsa.png"
             },
             {
@@ -79,31 +79,31 @@ export const fr = {
     },
     worldwide: {
         ctaTitle: "Prêt à étendre votre entreprise dans le monde entier ?",
-        ctaDesc: "Nous aidons les marques locales à se mondialiser grâce à une technologie de pointe et un support multilingue complet.",
+        ctaDesc: "Nous aidons les marques locales à se mondialiser grâce à une technologie de pointe and un support multilingue complet.",
         features: [
             {
                 title: "Support toutes langues",
-                desc: "Nous construisons des systèmes qui supportent plusieurs langues dès le départ, y compris le RTL et les caractères spéciaux."
+                desc: "Nous construisons des systèmes qui supportent plusieurs langues dès le départ, y compris le RTL and les caractères spéciaux."
             },
             {
                 title: "Accès mondial rapide",
-                desc: "Optimisation du CDN et de l'infrastructure cloud pour garantir que votre site Web soit rapide depuis n'importe quel pays."
+                desc: "Optimisation du CDN and de l'infrastructure cloud pour garantir que votre site Web soit rapide depuis n'importe quel pays."
             },
             {
                 title: "Conformité internationale",
-                desc: "Garantir que votre site Web respecte le RGPD, le CCPA et d'autres normes mondiales de réglementation de la vie privée."
+                desc: "Garantir que votre site Web respecte le RGPD, le CCPA and d'autres normes mondiales de réglementation de la vie privée."
             }
         ]
     },
     faq: {
         title: "Foire Aux Questions",
-        description: "Tout ce que vous devez savoir sur nos services et processus.",
+        description: "Tout ce que vous devez savoir sur nos services and processus.",
         stillHaveQuestions: "Vous avez encore des questions ?",
         footerContactDesc: "Nous sommes là pour vous aider. Contactez-nous via WhatsApp pour une consultation gratuite.",
         items: [
             {
                 question: "Quels services KodingKeliling propose-t-il ?",
-                answer: "Nous proposons le développement professionnel de sites Web, de logiciels sur mesure, d'applications mobiles et la conception UI/UX."
+                answer: "Nous proposons le développement professionnel de sites Web, de logiciels sur mesure, d'applications mobiles and la conception UI/UX."
             },
             {
                 question: "Combien de temps faut-il pour créer un site Web ?",
@@ -111,15 +111,15 @@ export const fr = {
             },
             {
                 question: "Est-ce que j'obtiens la pleine propriété du code source une fois le projet terminé ?",
-                answer: "Oui, vous avez 100% de la propriété du code source. Nous fournirons tous les fichiers et la documentation nécessaires une fois le projet terminé."
+                answer: "Oui, vous avez 100% de la propriété du code source. Nous fournirons tous les fichiers and la documentation nécessaires une fois le projet terminé."
             },
             {
                 question: "Puis-je consulter gratuitement ?",
-                answer: "Bien sûr ! Nous proposons une consultation initiale gratuite pour discuter des idées, des besoins et fournir un devis approximatif pour votre projet."
+                answer: "Bien sûr ! Nous proposons une consultation initiale gratuite pour discuter des idées, des besoins and fournir un devis approximatif pour votre projet."
             },
             {
                 question: "Quelle technologie est utilisée ?",
-                answer: "Nous utilisons des technologies modernes et fiables comme React, Next.js, TypeScript, Node.js, Flutter et divers services cloud comme AWS ou Vercel pour garantir des performances et une évolutivité élevées."
+                answer: "Nous utilisons des technologies modernes and fiables comme React, Next.js, TypeScript, Node.js, Flutter and divers services cloud comme AWS ou Vercel pour garantir des performances and une évolutivité élevées."
             }
         ]
     }

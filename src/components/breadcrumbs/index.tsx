@@ -8,30 +8,27 @@ import { useLanguage } from "@/context/LanguageContext";
 
 export const Breadcrumbs = () => {
     const pathname = usePathname();
-    const { language } = useLanguage();
+    const { t } = useLanguage();
 
     if (pathname === "/") return null;
 
     const pathSegments = pathname.split("/").filter(Boolean);
     
-    const labels: Record<string, Record<string, string>> = {
-        id: {
-            services: "Layanan",
-            projects: "Project",
-            reviews: "Review",
-            contact: "Kontak",
-            home: "Beranda"
-        },
-        en: {
-            services: "Services",
-            projects: "Projects",
-            reviews: "Reviews",
-            contact: "Contact",
-            home: "Home"
-        }
+    // Map URL segments to navigation translation keys
+    const segmentToNavKey: Record<string, string> = {
+        services: "layanan",
+        projects: "project",
+        reviews: "review",
+        contact: "kontak"
     };
 
-    const getLabel = (segment: string) => labels[language][segment] || segment;
+    const getLabel = (segment: string) => {
+        const navKey = segmentToNavKey[segment.toLowerCase()];
+        if (navKey && (t.navigation as any)[navKey]) {
+            return (t.navigation as any)[navKey];
+        }
+        return segment;
+    };
 
     return (
         <nav className="mx-auto max-w-container px-4 pt-4 md:px-8 md:pt-8" aria-label="Breadcrumb">
@@ -39,7 +36,7 @@ export const Breadcrumbs = () => {
                 <li>
                     <Link href="/" className="hover:text-primary flex items-center gap-1 transition-colors">
                         <Home02 className="size-4" />
-                        <span>{labels[language].home}</span>
+                        <span>{t.common.home}</span>
                     </Link>
                 </li>
                 {pathSegments.map((segment, index) => {
