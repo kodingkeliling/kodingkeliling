@@ -1,9 +1,9 @@
-import { services as idServices } from "../id/services";
-import { projects as idProjects } from "../id/projects";
+import { services } from "./services";
+import { projects } from "./projects";
 
 export const jp = {
-    services: idServices,
-    projects: idProjects,
+    services,
+    projects,
     navigation: {
         layanan: "サービス",
         project: "プロジェクト",
@@ -53,19 +53,19 @@ export const jp = {
             {
                 name: "Chalida Rahma Listy Hidayat",
                 role: "学生",
-                review: "KodingKelilingが作成したウェブサイトの結果に非常に満足しています。デザインは非常にモダンで、パフォーマンスも非常に速いです。",
+                review: "KodingKelilingが作成したウェブサイトの結果に非常に満足しています。デザインは非常にモダンで、パフォーマンスも非常に速いです。SEOも私たちのビジネスのブランド認知度を高めるのに非常に役立っています。",
                 avatar: "/images/chalida.png"
             },
             {
                 name: "Elsa Irham",
                 role: "中小企業オーナー",
-                review: "開発されたモバイルアプリケーションは本当に直感的で、顧客にとって使いやすいものです。",
+                review: "開発されたモバイルアプリケーションは本当に直感的で、顧客にとって使いやすいものです。開発プロセス中のKodingKelilingチームのコミュニケーションは非常に良く、結果は期待を上回りました。",
                 avatar: "/images/elsa.png"
             },
             {
                 name: "Ranca Gigih Pramudita",
                 role: "バリスタ",
-                review: "KodingKelilingのカスタムシステムは、私たちのビジネス効率化のためのまさに正しいソリューションです。",
+                review: "KodingKelilingのカスタムシステムは、私たちのビジネス効率化のためのまさに正しいソリューションです。負担になる月額サブスクリプション料金はなく、機能は完全でスケーラブルです。ありがとうございました！",
                 avatar: "/images/ranca.png"
             }
         ]
@@ -103,7 +103,7 @@ export const jp = {
         items: [
             {
                 question: "KodingKelilingはどのようなサービスを提供していますか？",
-                answer: "プロフェッショナルなウェブサイト開発、カスタムソフトウェア開発、モバイルアプリ開発、UI/UXデザインを提供しています。"
+                answer: "プロフェッショナルなウェブサイト開発（ランディングページ、会社概要、Eコマース）、カスタムソフトウェア開発、モバイルアプリ開発（iOS & Android）、UI/UXデザインを提供しています。"
             },
             {
                 question: "ウェブサイトの制作にはどのくらいの時間がかかりますか？",
