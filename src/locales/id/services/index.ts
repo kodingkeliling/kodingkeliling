@@ -3,8 +3,8 @@ export const services = [
         id: "1",
         title: "Jasa Pembuatan Website & Web App",
         slug: "web-development",
-        description: "Jasa pembuatan website Bandung & Jakarta dengan performa tinggi, responsif, dan SEO-friendly untuk bisnis di seluruh Indonesia.",
-        detailDescription: "Kami menghadirkan jasa pembuatan website profesional untuk bisnis Anda. Dari landing page yang memikat hingga dashboard operasional yang kompleks, tim kami di Bandung & Jakarta memastikan setiap baris kode mengabdi pada target bisnis Anda di seluruh Indonesia.",
+        description: "Jasa pembuatan website profesional dengan performa tinggi, responsif, dan SEO-friendly untuk bisnis di seluruh dunia.",
+        detailDescription: "Kami menghadirkan jasa pembuatan website profesional untuk bisnis Anda. Dari landing page yang memikat hingga dashboard operasional yang kompleks, tim kami memastikan setiap baris kode mengabdi pada target bisnis Anda secara global.",
         features: ["Landing Page Premium", "CMS Custom (Next.js/Strapi)", "Optimasi SEO & Speed", "Progressive Web Apps"],
         iconName: "Monitor01",
         color: "brand"

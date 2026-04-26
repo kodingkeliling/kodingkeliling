@@ -19,34 +19,31 @@ const inter = Inter({
 
 export const metadata: Metadata = {
     title: {
-        default: "KodingKeliling — Jasa Pembuatan Website & Aplikasi Kustom Profesional Bandung & Jakarta",
+        default: "KodingKeliling — Professional Website & Custom App Development for Global Clients",
         template: "%s | KodingKeliling",
     },
-    description: "KodingKeliling adalah jasa pembuatan website, web app, software kustom (ERP/CRM), dan aplikasi mobile Android & iOS profesional di Bandung, Jakarta, dan Indonesia dengan performa tinggi serta SEO-friendly.",
+    description: "KodingKeliling provides professional website development, custom software (ERP/CRM), and mobile app services for clients worldwide with high performance and SEO-friendly solutions.",
     keywords: [
-        "jasa pembuatan website",
-        "jasa pembuatan aplikasi",
-        "jasa pembuatan software",
-        "pembuatan website bandung",
-        "pembuatan website jakarta",
-        "jasa website indonesia",
-        "software kustom",
-        "aplikasi mobile",
-        "Android & iOS",
-        "ERP kustom",
-        "CRM kustom",
+        "professional website development",
+        "custom software development",
+        "mobile app development",
+        "global website services",
+        "Android & iOS apps",
+        "custom ERP",
+        "custom CRM",
         "KodingKeliling",
-        "solusi digital"
+        "global digital solutions",
+        "multilingual website development"
     ],
     authors: [{ name: "KodingKeliling" }],
     creator: "KodingKeliling",
     publisher: "KodingKeliling",
     openGraph: {
         type: "website",
-        locale: "id_ID",
+        locale: "en_US",
         url: "https://kodingkeliling.com",
-        title: "KodingKeliling — Jasa Pembuatan Website & Aplikasi Kustom Profesional Bandung & Jakarta",
-        description: "KodingKeliling menyediakan jasa pembuatan website, web app, software kustom, dan aplikasi mobile profesional di Bandung, Jakarta, dan Indonesia.",
+        title: "KodingKeliling — Professional Website & Custom App Development Worldwide",
+        description: "KodingKeliling provides cutting-edge website, software, and mobile app development services for businesses globally.",
         siteName: "KodingKeliling",
     },
 };
