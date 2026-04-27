@@ -1,10 +1,9 @@
-import { services as idServices } from "../id/services";
-import { projects as idProjects } from "../id/projects";
+import { services } from "./services";
+import { projects } from "./projects";
 
-// Fallback to ID/EN structure but with localized strings where needed
 export const de = {
-    services: idServices,
-    projects: idProjects,
+    services,
+    projects,
     navigation: {
         layanan: "Dienste",
         project: "Projekte",
@@ -15,7 +14,7 @@ export const de = {
         badge: "Vertrauenswürdige digitale Lösung",
         title: "Realisieren Sie Ihre digitalen Ideen mit ",
         brand: "KodingKeliling",
-        description: "Professionelle Website-Entwicklung, Individualsoftware und mobile Apps für Kunden weltweit. Speziell entwickelt, um Ihren Geschäftswert digital zu steigern.",
+        description: "Professionelle Website-Entwicklung, Individualsoftware und mobile Apps für Kunden weltweit.",
         ctaConsultation: "Beraten",
         ctaServices: "Dienste ansehen",
         freeConsultation: "Kostenlose Beratung 0 Rp",
@@ -23,7 +22,7 @@ export const de = {
         worldwideService: "Globale Reichweite, Mehrsprachiger Support"
     },
     footer: {
-        description: "KodingKeliling ist Ihr Technologiepartner für innovative digitale Lösungen. Wir helfen Unternehmen mit digitalen Lösungen, die geografische Grenzen für den globalen Markt überschreiten, zu wachsen.",
+        description: "KodingKeliling ist Ihr Technologiepartner für innovative digitale Lösungen.",
         quickLinks: "Schnelllinks",
         contactNow: "Jetzt kontaktieren",
         services: "Dienste",
@@ -37,91 +36,57 @@ export const de = {
         seeDetail: "Details anzeigen",
         visitWebsite: "Website besuchen",
         latestProjects: "Unsere neuesten Projekte",
-        latestProjectsDesc: "Sehen Sie sich unsere besten Arbeiten für Kunden in verschiedenen Branchen an.",
+        latestProjectsDesc: "Sehen Sie sich unsere besten Arbeiten an.",
         seeAllProjects: "Alle Projekte anzeigen",
         ourServices: "Unsere Dienste",
-        ourServicesDesc: "Wir bieten verschiedene digitale Lösungen, um Ihr Unternehmen im digitalen Zeitalter zum Wachsen und Gedeihen zu bringen.",
+        ourServicesDesc: "Wir bieten verschiedene digitale Lösungen.",
         whatClientsSay: "Was unsere Kunden sagen",
-        whatClientsSayDesc: "Das Vertrauen unserer Kunden hat für uns oberste Priorität. Hier sind Testimonials von mehreren Kunden, die mit uns zusammengearbeitet haben.",
-        trustedBy: "Vertraut von Unternehmen & Organisationen",
+        whatClientsSayDesc: "Das Vertrauen unserer Kunden hat Priorität.",
+        trustedBy: "Vertraut von Unternehmen",
         home: "Startseite",
         consultNow: "Beraten",
         worldwideContent: "Globaler digitaler Partner",
-        worldwideContentDesc: "Wir bieten digitale Lösungen, die weltweit funktionieren and alle Sprachen and kulturellen Kontexte unterstützen.",
+        worldwideContentDesc: "Digitale Lösungen weltweit.",
         globalDigitalPartner: "Globaler digitaler Partner",
-        promoText: "🚀 10% RABATT AUF IHR ERSTES PROJEKT! • 📞 KOSTENLOSE BERATUNG JETZT • 🌐 KODINGKELILING: PROFESSIONELLE DIGITALE LÖSUNGEN • 💸 KEINE GEBÜHREN FÜR KMU • ✨ ",
+        promoText: "🚀 10% RABATT! • 📞 KOSTENLOSE BERATUNG • ✨ ",
         reviews: [
             {
                 name: "Chalida Rahma Listy Hidayat",
                 role: "Studentin",
-                review: "Sehr zufrieden mit den von KodingKeliling erstellten Website-Ergebnissen. Das Design ist sehr modern and die Leistung ist super schnell.",
+                review: "Sehr zufrieden mit der Website. Das Design ist modern und die Leistung ist super schnell.",
                 avatar: "/images/chalida.png"
             },
             {
                 name: "Elsa Irham",
                 role: "KMU-Besitzerin",
-                review: "Die entwickelte mobile Anwendung ist wirklich intuitiv and für unsere Kunden einfach zu bedienen.",
+                review: "Die mobile Anwendung ist intuitiv und einfach zu bedienen.",
                 avatar: "/images/elsa.png"
             },
             {
                 name: "Ranca Gigih Pramudita",
                 role: "Barista",
-                review: "Das maßgeschneiderte System von KodingKeliling ist wirklich die richtige Lösung für unsere Geschäftseffizienz.",
+                review: "Das maßgeschneiderte System ist die richtige Lösung. Keine monatlichen Gebühren.",
                 avatar: "/images/ranca.png"
             }
         ]
     },
     chat: {
         welcome: "Hallo! 👋 Willkommen bei **Koding Keliling**.",
-        assistantDesc: "Ich bin Ihr digitaler Assistent. Wie können wir Ihnen heute bei der **Website-Entwicklung**, **Individualsoftware** oder **mobilen Apps** helfen?",
-        directContact: "oder wenn Sie unseren Admin direkt kontaktieren möchten, klicken Sie [hier]({link})",
+        assistantDesc: "Ich bin Ihr digitaler Assistent.",
+        directContact: "Kontaktieren Sie uns [hier]({link})",
         typeMessage: "Nachricht eingeben...",
-        error: "Entschuldigung, der Dienst hat derzeit Probleme. Sie können direkt über WhatsApp mit uns chatten."
+        error: "Dienst nicht verfügbar, nutzen Sie WhatsApp."
     },
     worldwide: {
         ctaTitle: "Bereit, Ihr Geschäft weltweit auszubauen?",
-        ctaDesc: "Wir helfen lokalen Marken mit modernster Technologie and umfassender mehrsprachiger Unterstützung, global zu werden.",
-        features: [
-            {
-                title: "Unterstützung aller Sprachen",
-                desc: "Wir bauen Systeme, die von Grund auf mehrere Sprachen unterstützen, einschließlich RTL and Sonderzeichen."
-            },
-            {
-                title: "Schneller globaler Zugriff",
-                desc: "CDN-Optimierung and Cloud-Infrastruktur, um sicherzustellen, dass Ihre Website von jedem Land aus schnell erreichbar ist."
-            },
-            {
-                title: "Internationale Konformität",
-                desc: "Sicherstellung, dass Ihre Website die DSGVO, CCPA and andere globale Datenschutzstandards erfüllt."
-            }
-        ]
+        ctaDesc: "Wir helfen lokalen Marken, global zu werden.",
+        features: [{title: "Alle Sprachen", desc: "Unterstützung aller Sprachen."}, {title: "Globaler Zugriff", desc: "Schnelles CDN."}, {title: "Konformität", desc: "Globale Standards."}]
     },
     faq: {
-        title: "Häufig gestellte Fragen",
-        description: "Alles, was Sie über unsere Dienste and Prozesse wissen müssen.",
+        title: "FAQ",
+        description: "Alles über unsere Dienste.",
         stillHaveQuestions: "Haben Sie noch Fragen?",
-        footerContactDesc: "Wir sind hier, um zu helfen. Kontaktieren Sie uns über WhatsApp für eine kostenlose Beratung.",
-        items: [
-            {
-                question: "Welche Dienste bietet KodingKeliling an?",
-                answer: "Wir bieten professionelle Website-Entwicklung, Individualsoftware, mobile Apps und UI/UX-Design an."
-            },
-            {
-                question: "Wie lange dauert es, eine Website zu erstellen?",
-                answer: "Die Dauer hängt von der Komplexität des Projekts ab. Eine einfache Landingpage dauert in der Regel 1–2 Wochen, während ein komplexeres System 4–8 Wochen oder länger dauern kann."
-            },
-            {
-                question: "Erhalte ich nach Abschluss des Projekts das volle Eigentum am Quellcode?",
-                answer: "Ja, Sie haben 100% Eigentum am Quellcode. Wir werden nach Abschluss des Projekts alle erforderlichen Dateien und Dokumentationen bereitstellen."
-            },
-            {
-                question: "Kann ich mich kostenlos beraten lassen?",
-                answer: "Natürlich! Wir bieten eine kostenlose Erstberatung an, um Ideen und Anforderungen zu besprechen und eine grobe Schätzung für Ihr Projekt abzugeben."
-            },
-            {
-                question: "Welche Technologie wird verwendet?",
-                answer: "Wir verwenden moderne und zuverlässige Technologien wie React, Next.js, TypeScript, Node.js, Flutter und verschiedene Cloud-Dienste wie AWS oder Vercel, um hohe Leistung und Skalierbarkeit zu gewährleisten."
-            }
-        ]
+        footerContactDesc: "Kontaktieren Sie uns über WhatsApp.",
+        items: [{question: "Dienste ?", answer: "Web, Software, Apps."}, {question: "Zeit ?", answer: "1-8 Wochen."}, {question: "Eigentum ?", answer: "100% Ihnen."}, {question: "Kostenlos ?", answer: "Ja, Erstberatung."}, {question: "Techno ?", answer: "Next.js, TS, Node."}]
     }
 };
