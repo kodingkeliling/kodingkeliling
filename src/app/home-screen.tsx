@@ -5,6 +5,7 @@ import { Hero } from "@/components/hero";
 import { ServicesSection } from "@/components/services-section";
 import { ProjectsSection } from "@/components/projects-section";
 import { ReviewsSection } from "@/components/reviews-section";
+import { FAQSection } from "@/components/faq-section";
 
 export const HomeScreen = () => {
     return (
@@ -13,6 +14,7 @@ export const HomeScreen = () => {
             <ServicesSection />
             <ProjectsSection limit={3} />
             <ReviewsSection />
+            <FAQSection />
         </main>
     );
 };

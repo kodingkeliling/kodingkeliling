@@ -8,7 +8,8 @@ export const es = {
         layanan: "Servicios",
         project: "Proyectos",
         review: "Reseñas",
-        kontak: "Contacto"
+        kontak: "Contacto",
+        faq: "FAQ"
     },
     hero: {
         badge: "Solución Digital de Confianza",

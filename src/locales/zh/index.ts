@@ -8,7 +8,8 @@ export const zh = {
         layanan: "服务",
         project: "项目",
         review: "评价",
-        kontak: "联系"
+        kontak: "联系",
+        faq: "常见问题"
     },
     hero: {
         badge: "值得信赖的数字解决方案",

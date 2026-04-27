@@ -8,7 +8,8 @@ export const ko = {
         layanan: "서비스",
         project: "프로젝트",
         review: "리뷰",
-        kontak: "연락처"
+        kontak: "연락처",
+        faq: "자주 묻는 질문"
     },
     hero: {
         badge: "신뢰할 수 있는 디지털 솔루션",

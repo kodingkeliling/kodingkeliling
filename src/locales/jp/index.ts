@@ -8,7 +8,8 @@ export const jp = {
         layanan: "サービス",
         project: "プロジェクト",
         review: "レビュー",
-        kontak: "コンタクト"
+        kontak: "コンタクト",
+        faq: "よくある質問"
     },
     hero: {
         badge: "信頼されるデジタルソリューション",

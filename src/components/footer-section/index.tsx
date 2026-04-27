@@ -37,10 +37,11 @@ export const FooterSection = () => {
                         <div className="flex flex-col gap-4 text-center lg:text-left">
                             <h4 className="text-sm font-semibold text-tertiary">{footer.quickLinks}</h4>
                             <ul className="flex flex-col gap-3 font-semibold text-primary">
-                                <li><a href="/services" className="hover:text-brand transition-all">Layanan</a></li>
-                                <li><a href="/projects" className="hover:text-brand transition-all">Project</a></li>
-                                <li><a href="/reviews" className="hover:text-brand transition-all">Review</a></li>
-                                <li><a href={process.env.NEXT_PUBLIC_WHATSAPP_LINK || "#"} target="_blank" className="hover:text-brand transition-all">Kontak</a></li>
+                                <li><a href="/services" className="hover:text-brand transition-all">{t.navigation.layanan}</a></li>
+                                <li><a href="/projects" className="hover:text-brand transition-all">{t.navigation.project}</a></li>
+                                <li><a href="/reviews" className="hover:text-brand transition-all">{t.navigation.review}</a></li>
+                                <li><a href="#faq" className="hover:text-brand transition-all">{t.navigation.faq}</a></li>
+                                <li><a href={process.env.NEXT_PUBLIC_WHATSAPP_LINK || "#"} target="_blank" className="hover:text-brand transition-all">{t.navigation.kontak}</a></li>
                             </ul>
                         </div>
                         <div className="flex flex-col gap-4 text-center lg:text-left">

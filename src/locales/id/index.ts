@@ -8,7 +8,8 @@ export const id = {
         layanan: "Layanan",
         project: "Project",
         review: "Review",
-        kontak: "Kontak"
+        kontak: "Kontak",
+        faq: "FAQ"
     },
     hero: {
         badge: "Jasa Pembuatan Web & APP No. 1",
