@@ -55,14 +55,15 @@ export const FAQSection = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
-                                className="py-6"
+                                className="relative z-10 py-6"
                             >
                                 <button
+                                    type="button"
                                     onClick={() => toggleAccordion(index)}
-                                    className="flex w-full items-start justify-between text-left focus:outline-none"
+                                    className="group flex min-h-[44px] w-full cursor-pointer items-start justify-between text-left focus:outline-none"
                                     aria-expanded={openIndex === index}
                                 >
-                                    <span className="text-lg font-semibold text-primary pr-8">
+                                    <span className="text-lg font-semibold text-primary pr-8 transition-colors group-hover:text-brand-600">
                                         {item.question}
                                     </span>
                                     <span className="mt-1 flex size-6 shrink-0 items-center justify-center rounded-full border border-secondary text-tertiary transition-colors group-hover:border-brand-300 group-hover:text-brand-600">
