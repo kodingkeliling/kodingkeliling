@@ -15,7 +15,20 @@ export const Logo = ({ className }: { className?: string }) => {
                     e.currentTarget.src = "/favicon.png";
                 }}
             />
-            <span className="text-xl font-bold text-primary">Koding Keliling</span>
+            <Image
+                src="/images/title-light.png"
+                alt="Koding Keliling"
+                width={200}
+                height={40}
+                className="h-8 w-auto hidden dark:block"
+            />
+            <Image
+                src="/images/title-dark.png"
+                alt="Koding Keliling"
+                width={200}
+                height={40}
+                className="h-8 w-auto block dark:hidden"
+            />
         </div>
     );
 };
